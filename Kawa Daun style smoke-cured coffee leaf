@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citane Project. Kawa Daun Style Smoke-Cured Coffee Leaf</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.65;
+            color: #333;
+            background: #fff;
+            padding: 2rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+        
+        .meta {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+        }
+        
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .image-block {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        
+        .image-block img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 0.8rem;
+        }
+        
+        .caption {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .timeline-date {
+            font-size: 0.95rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        
+        table th, table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        table th {
+            background: #f9f9f9;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        table tr:last-child td {
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .highlight-box {
+            background: #f9f9f9;
+            padding: 1.2rem;
+            border-left: 3px solid #999;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            
+            h1 {
+                font-size: 1.7rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .estate-info {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #555;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Citane Project</h1>
+<p class="subtitle">Kawa Daun style smoke-cured coffee leaf. A field note from transformation.</p>
+
+<div class="meta">
+    <p><strong>Thumpassery Estate, Kerala</strong></p>
+    <p>Chandragiri Variety Arabica + Native Landrace Robusta (70+ years)</p>
+    <p>Both naturally grown under Hevea rubber</p>
+    <p>5 July 2026</p>
+</div>
+
+<div class="section">
+    <p>The question today was simple: what happens when you smoke coffee leaves slowly over time? Not to make them taste smoky, but to understand how the smoke itself becomes part of the transformation.</p>
+    
+    <p>This note documents one attempt to answer that through direct observation. Fresh leaf to finished cup.</p>
+</div>
+
+<h2>The Plants</h2>
+
+<div class="section">
+    <div class="estate-info">
+        <p><strong>Robusta:</strong> Native landrace, undisturbed valley location with perennial springs and streams. Organic soil, 70+ years on the land. Grown beneath shade canopy of mature Hevea rubber.</p>
+        
+        <p><strong>Arabica:</strong> Chandragiri variety, same estate, same natural growing method. Shade-grown under the same rubber canopy system.</p>
+        
+        <p>Both varieties were processed side by side under identical smoking and drying conditions. The comparison reveals not which variety is superior, but how each responds to the same processing architecture.</p>
+    </div>
+</div>
+
+<h2>17 June. Fresh Leaf</h2>
+
+<div class="section">
+    <p>Harvest moment. Leaves collected from both Arabica and Robusta. Temperature reading shows 27.2°C at leaf surface. Still carrying field moisture and green character.</p>
+    
+    <div class="image-block">
+        <img src="01-fresh-leaves.jpg" alt="Fresh coffee leaves on field ground">
+        <p class="caption">Fresh leaves from the field</p>
+    </div>
+    
+    <div class="image-block">
+        <img src="02-temp-fresh.jpg" alt="Temperature reading 27.2°C on fresh leaves">
+        <p class="caption">Fresh leaf temperature 27.2°C</p>
+    </div>
+</div>
+
+<h2>18 June. Smoke</h2>
+
+<div class="section">
+    <p>The smokehouse is traditional rubber sheet construction. Approximately 14 ft by 14 ft, about 14 ft high, with 8 shelves. The fuel is peeled true cinnamon timber. Not chips or dust. Actual peeled logs burning slow.</p>
+    
+    <p>Leaves are bundled and suspended inside. Door stays closed to hold the smoke. Staff reported strong smoke character in the chamber, but notably the dried leaves later showed no obvious smoke smell on casual sniffing. The smoke seems to have worked into the leaf at a molecular level rather than coating the surface.</p>
+    
+    <div class="grid-2">
+        <div class="image-block">
+            <img src="03-kiln-fire.jpg" alt="Bright kiln fire with cinnamon wood burning">
+            <p class="caption">Cinnamon timber burning</p>
+        </div>
+        <div class="image-block">
+            <img src="04-cinnamon-timber.jpg" alt="Peeled cinnamon wood logs">
+            <p class="caption">Peeled true cinnamon timber</p>
+        </div>
+    </div>
+    
+    <div class="image-block">
+        <img src="05-leaves-shelf.jpg" alt="Leaves suspended on shelf in smokehouse">
+        <p class="caption">Leaves on shelf during smoke-curing, 18 June</p>
+    </div>
+</div>
+
+<h2>19 June. Mid-Process</h2>
+
+<div class="section">
+    <p>After approximately 24 hours in the smokehouse, the initial bundles remained too green in the centre. Leaves were opened and spread across the shelves for better air circulation. Temperature now 44.0°C on the leaf surface. Smoke continues.</p>
+    
+    <div class="image-block">
+        <img src="06-mid-process-temp.jpg" alt="Temperature reading 44.1°C mid-drying">
+        <p class="caption">Mid-process, temperature 44.1°C, leaves opened and spread</p>
+    </div>
+    
+    <div class="image-block">
+        <img src="07-mid-drying.jpg" alt="Smoke inside chamber with drying leaves">
+        <p class="caption">Smoke surrounding the leaves, 19 June afternoon</p>
+    </div>
+    
+    <p>The drying is gradual. The smoke surrounds the leaves continuously. Combined drying and curing ran across roughly two nights and three days total.</p>
+</div>
+
+<h2>20 June. Final Drying</h2>
+
+<div class="section">
+    <p>By morning of day 3, the process is complete. Leaves show olive bronze and light brown tones. Complete collapse of fresh leaf structure. The colour is uniform and dry. Temperature reads 77.2°C.</p>
+    
+    <p>The bundles are bagged separately. Robusta (green bag) and Arabica (white bag) kept distinct for brewing comparison.</p>
+    
+    <div class="grid-2">
+        <div class="image-block">
+            <img src="08-final-temp.jpg" alt="Temperature reading 77.2°C">
+            <p class="caption">Final temperature 77.2°C on morning of 20 June</p>
+        </div>
+        <div class="image-block">
+            <img src="09-dried-leaves-bulk.jpg" alt="Bulk of dried smoke-cured leaves">
+            <p class="caption">Dried leaves showing olive and bronze colour</p>
+        </div>
+    </div>
+    
+    <div class="image-block">
+        <img src="10-leaf-detail.jpg" alt="Close-up of individual dried leaves">
+        <p class="caption">Leaf detail after smoke-curing process complete</p>
+    </div>
+</div>
+
+<h2>5 July. Brewing and Tasting</h2>
+
+<div class="section">
+    <p>Both batches brewed with identical parameters to ensure fair comparison. 53 grams dry leaf. 2.250 litres water. Brief rinse before decoction. Covered, simmered, then strained.</p>
+    
+    <h3 style="font-size: 1.1rem; margin: 1.5rem 0 1rem 0;">The Numbers</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Stage</th>
+                <th>Robusta</th>
+                <th>Arabica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dry leaf</td>
+                <td>53 g</td>
+                <td>53 g</td>
+            </tr>
+            <tr>
+                <td>After double rinse</td>
+                <td>218 g</td>
+                <td>188 g</td>
+            </tr>
+            <tr>
+                <td>After decoction + strain</td>
+                <td>270 g</td>
+                <td>222 g</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p>The difference is immediate. Robusta holds more water throughout the cycle. 30 grams more after rinsing, 48 grams more in the final weight. This moisture retention may contribute to the fuller body observed in the cup.</p>
+</div>
+
+<h2>The Liquor</h2>
+
+<div class="section">
+    <p>Both batches produce clear, bright amber liquor. Highly transparent. Free from cloudiness. The appearance alone is striking. Not a typical herbal infusion. More like a refined tea or light whisky in clarity.</p>
+    
+    <div class="grid-2">
+        <div class="image-block">
+            <img src="12-brewing-setup.jpg" alt="Pot with leaves ready to heat on burner">
+            <p class="caption">Brewing setup. Leaves in pot, ready to heat</p>
+        </div>
+        <div class="image-block">
+            <img src="11-robusta-liquor.jpg" alt="Clear amber Robusta liquor in glass">
+            <p class="caption">Robusta liquor. Clear amber and bright</p>
+        </div>
+    </div>
+    
+    <div class="image-block">
+        <img src="14-final-liquor.jpg" alt="Final smoke-cured coffee leaf decoction in glass, backlit to show clarity">
+        <p class="caption">Final liquor. Clear, bright amber. No cloudiness visible.</p>
+    </div>
+</div>
+
+<h2>What the Cup Shows</h2>
+
+<div class="section">
+    <p><strong>Robusta:</strong> Fuller expression. More structural character. The smoke-curing process appears to favour this species. The decoction carries confidence and presence. Stronger first impression.</p>
+    
+    <p><strong>Arabica:</strong> Softer by approximately 10 percent. More delicate. The cup seemed gentler and more restrained. Not poor. Not weak. Simply different in tone and intensity. The smoke-curing process works, but Arabica carries it with less authority.</p>
+    
+    <div class="highlight-box">
+        <p><strong>Working hypothesis:</strong> Robusta may be better suited to smoke-cured Kawa Daun style processing. Arabica may still be better suited to fermentation, oxidation, and other softer Buna pathways.</p>
+    </div>
+</div>
+
+<h2>What This Means</h2>
+
+<div class="section">
+    <p>The smokehouse process did not merely add smoke. It produced a beverage that felt fundamentally different from the African style decoctions explored earlier. The process sits apart from fresh green leaf, Engere style brewing, oven roasting, and enzyme assisted pathways.</p>
+    
+    <p>This suggests a larger principle: processing method becomes the dominant factor in defining coffee leaf beverages. Rather than asking "which coffee leaf is best", the more useful question becomes "which processing method best expresses each variety".</p>
+    
+    <p>Like tea, coffee leaves may eventually support multiple distinct traditions. Smoke-cured. Oxidised. Fermented. Enzyme-assisted. Fresh green. Roasted. Aged. Each reveals different characteristics from the same plant.</p>
+</div>
+
+<h2>Next</h2>
+
+<div class="section">
+    <p>Repeat with clearly tagged bundles of both species under identical conditions. Blind comparison after chilling and after 24 hours rest. Record aroma, smoke integration, sweetness, bitterness, body, returning sweetness after swallowing.</p>
+    
+    <p>The useful result today is not that one species won. The useful result is that the smoke-cured pathway worked well enough to deserve repetition and refinement.</p>
+</div>
+
+<div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #eee; font-size: 0.9rem; color: #999;">
+    <p><strong>Citane Project. Kawa Daun style smoke-cured coffee leaf.</strong> By KoffyKraft. July 2026.</p>
+</div>
+
+</body>
+</html>
