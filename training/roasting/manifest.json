@@ -1,0 +1,111 @@
+{
+  "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02",
+  "support_pages": [
+    "safety.html",
+    "study-guide.html",
+    "glossary.html",
+    "references.html"
+  ],
+  "lessons": [
+    {
+      "title": "Lesson 1.1 \u2013 What Changes During Coffee Roasting?",
+      "file": "lessons/lesson-1-1-what-changes-during-coffee-roasting.html"
+    },
+    {
+      "title": "Lesson 1.2 \u2013 Heat Transfer & Your Roaster",
+      "file": "lessons/lesson-1-2-heat-transfer-and-your-roaster.html"
+    },
+    {
+      "title": "Lesson 1.3 \u2013 Bean Density & Moisture: How They Affect Roasting",
+      "file": "lessons/lesson-1-3-bean-density-and-moisture-how-they-affect-roasting.html"
+    },
+    {
+      "title": "Lesson 1.4 \u2013 Understanding First Crack & Managing Development Phase",
+      "file": "lessons/lesson-1-4-understanding-first-crack-and-managing-development-phase.html"
+    },
+    {
+      "title": "Lesson 1.5 \u2013 Roast Profiles: Understanding and Guiding the Curve",
+      "file": "lessons/lesson-1-5-roast-profiles-understanding-and-guiding-the-curve.html"
+    },
+    {
+      "title": "Lesson 1.6 \u2013 Recognizing and Understanding Roast Defects",
+      "file": "lessons/lesson-1-6-recognizing-and-understanding-roast-defects.html"
+    },
+    {
+      "title": "Lesson 1.7 \u2013 Light, Medium, and Dark: Understanding Roast Levels in the Real World",
+      "file": "lessons/lesson-1-7-light-medium-and-dark-understanding-roast-levels-in-the-real-world.html"
+    },
+    {
+      "title": "Lesson 1.8 \u2013 Matching Roast to Brew Method: Completing the Journey",
+      "file": "lessons/lesson-1-8-matching-roast-to-brew-method-completing-the-journey.html"
+    },
+    {
+      "title": "Lesson 1.9 \u2013 Troubleshooting Roast Problems: Learning to See, Think, and Improve",
+      "file": "lessons/lesson-1-9-troubleshooting-roast-problems-learning-to-see-think-and-improve.html"
+    },
+    {
+      "title": "Lesson 1.10 \u2013 Roasting for Flavor Goals",
+      "file": "lessons/lesson-1-10-roasting-for-flavor-goals.html"
+    },
+    {
+      "title": "Lesson 1.11 \u2013 Sample Roasting vs Production Roasting",
+      "file": "lessons/lesson-1-11-sample-roasting-vs-production-roasting.html"
+    },
+    {
+      "title": "Lesson 1.12 \u2013 Preparing for Roasting (Indian Coffee Focus)",
+      "file": "lessons/lesson-1-12-preparing-for-roasting-indian-coffee-focus.html"
+    }
+  ],
+  "references": [
+    {
+      "title": "SCA Coffee Skills Program - Roasting module",
+      "url": "https://education.sca.coffee/coffee-skills-program",
+      "note": "Industry training pathway covering roasting concepts, profile control, color, equipment operation, and production workflow.",
+      "tags": [
+        "training",
+        "roasting",
+        "curriculum"
+      ]
+    },
+    {
+      "title": "SCA Coffee Value Assessment",
+      "url": "https://sca.coffee/value-assessment",
+      "note": "Current SCA framework for evaluating coffee value and sensory attributes.",
+      "tags": [
+        "sensory",
+        "quality",
+        "assessment"
+      ]
+    },
+    {
+      "title": "World Coffee Research Sensory Lexicon",
+      "url": "https://worldcoffeeresearch.org/resources/sensory-lexicon",
+      "note": "A structured vocabulary for coffee sensory description and calibration.",
+      "tags": [
+        "sensory",
+        "flavor",
+        "calibration"
+      ]
+    },
+    {
+      "title": "Coffee Board of India",
+      "url": "https://coffeeboard.gov.in/",
+      "note": "Official Indian coffee authority; useful context for Indian origins, production, quality, and sector information.",
+      "tags": [
+        "india",
+        "origin",
+        "coffee board"
+      ]
+    },
+    {
+      "title": "International Coffee Organization",
+      "url": "https://icocoffee.org/",
+      "note": "Global intergovernmental coffee organization with coffee market and sector resources.",
+      "tags": [
+        "global",
+        "market",
+        "coffee"
+      ]
+    }
+  ]
+}

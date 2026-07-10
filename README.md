@@ -14,3 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+## KoffyKraft Training Pages
+
+- [Coffee Roasting Foundations](training/roasting/index.html)
