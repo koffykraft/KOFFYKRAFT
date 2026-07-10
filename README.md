@@ -18,3 +18,5 @@ Here are some ideas to get you started:
 ## KoffyKraft Training Pages
 
 - [Coffee Roasting Foundations](training/roasting/index.html)
+- [Coffee Brewing Foundations](training/brewing/index.html)
+- [Coffee Cupping and Sensory Foundations](training/cupping/index.html)

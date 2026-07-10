@@ -1,0 +1,73 @@
+{
+  "course": "cupping",
+  "lessons": [
+    {
+      "title": "Lesson 1.1: Aroma Mastery",
+      "file": "lessons/lesson-1-1-aroma-mastery.html"
+    },
+    {
+      "title": "Lesson 1.2: Sweetness Sensitivity",
+      "file": "lessons/lesson-1-2-sweetness-sensitivity.html"
+    },
+    {
+      "title": "Lesson 1.3: Acidity Awareness",
+      "file": "lessons/lesson-1-3-acidity-awareness.html"
+    },
+    {
+      "title": "Lesson 1.4: Body & Texture",
+      "file": "lessons/lesson-1-4-body-and-texture.html"
+    },
+    {
+      "title": "Lesson 1.5: Aftertaste & Clean Cup",
+      "file": "lessons/lesson-1-5-aftertaste-and-clean-cup.html"
+    },
+    {
+      "title": "Lesson 2.1: Dry to Wet \u2013 Aroma Journey",
+      "file": "lessons/lesson-2-1-dry-to-wet-aroma-journey.html"
+    },
+    {
+      "title": "Lesson 2.2: Flavor Balance Practice",
+      "file": "lessons/lesson-2-2-flavor-balance-practice.html"
+    },
+    {
+      "title": "Lesson 2.3: Defects 101",
+      "file": "lessons/lesson-2-3-defects-101.html"
+    },
+    {
+      "title": "Lesson 2.4: Consistency & Comparative Cupping",
+      "file": "lessons/lesson-2-4-consistency-and-comparative-cupping.html"
+    },
+    {
+      "title": "Lesson 2.5: Building a Cupping Routine",
+      "file": "lessons/lesson-2-5-building-a-cupping-routine.html"
+    },
+    {
+      "title": "Lesson 3.1: Cupping in Real-Life Conditions (Revised)",
+      "file": "lessons/lesson-3-1-cupping-in-real-life-conditions.html"
+    },
+    {
+      "title": "Lesson 3.2: Gentle Flavor Calibration & Familiar Taste Mapping (Revised)",
+      "file": "lessons/lesson-3-2-gentle-flavor-calibration-and-familiar-taste-mapping.html"
+    },
+    {
+      "title": "Lesson 3.3: Using a Cupping Form Effectively (Revised)",
+      "file": "lessons/lesson-3-3-using-a-cupping-form-effectively.html"
+    },
+    {
+      "title": "Lesson 3.4: Roast Evaluation & Quality Scoring (Revised)",
+      "file": "lessons/lesson-3-4-roast-evaluation-and-quality-scoring.html"
+    },
+    {
+      "title": "Lesson 3.6: Building a Personal Flavor Library",
+      "file": "lessons/lesson-3-6-building-a-personal-flavor-library.html"
+    },
+    {
+      "title": "Lesson 3.7: Cupping for Troubleshooting",
+      "file": "lessons/lesson-3-7-cupping-for-troubleshooting.html"
+    },
+    {
+      "title": "Lesson 3.8: Exploratory Cupping & Curiosity Sessions",
+      "file": "lessons/lesson-3-8-exploratory-cupping-and-curiosity-sessions.html"
+    }
+  ]
+}
