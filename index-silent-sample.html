@@ -9,413 +9,413 @@
     @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Cormorant+Garamond:wght@300;400&display=swap");
 
     :root {
-      --ink: #171717;
-      --soft: #5e5e58;
-      --pale: #ecebe7;
+      --ink: #141414;
+      --muted: #666660;
+      --line: #eeeeea;
       --white: #fff;
-      --gutter: clamp(24px, 6vw, 92px);
+      --gutter: clamp(24px, 6vw, 96px);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       background: var(--white);
       color: var(--ink);
       font-family: "Barlow Condensed", "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.7;
+      line-height: 1.65;
     }
 
-    a {
-      color: inherit;
-    }
+    a { color: inherit; }
 
-    .sample-header {
+    .header {
+      min-height: 96px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 28px;
-      min-height: 96px;
       padding: 26px var(--gutter);
-      background: #fff;
     }
 
-    .sample-brand {
-      font-size: clamp(26px, 3vw, 40px);
+    .brand {
+      font-size: clamp(27px, 3vw, 42px);
       font-weight: 300;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.015em;
       text-decoration: none;
     }
 
-    .sample-nav {
+    nav {
       display: flex;
-      gap: clamp(18px, 3vw, 42px);
-      color: #44443f;
-      font-size: 13px;
+      gap: clamp(24px, 4vw, 56px);
+      color: #33332f;
+      font-size: 12px;
       font-weight: 500;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
     }
 
-    .sample-nav a {
+    nav a,
+    .door,
+    .inside a {
       min-height: 44px;
       display: inline-flex;
       align-items: center;
       text-decoration: none;
     }
 
-    .sample-nav a:hover,
-    .quiet-link:hover {
+    nav a:hover,
+    .door:hover,
+    .inside a:hover {
       text-decoration: underline;
-      text-underline-offset: 7px;
+      text-underline-offset: 8px;
     }
 
     .hero {
       min-height: calc(100vh - 96px);
       display: grid;
-      grid-template-columns: minmax(0, 0.92fr) minmax(260px, 0.5fr);
+      grid-template-columns: minmax(0, 0.9fr) minmax(220px, 0.38fr);
       align-items: center;
-      gap: clamp(70px, 12vw, 190px);
-      padding: clamp(70px, 10vw, 150px) var(--gutter);
+      gap: clamp(72px, 12vw, 190px);
+      padding: clamp(72px, 10vw, 150px) var(--gutter);
     }
 
-    .overline {
-      margin: 0 0 26px;
-      color: #696963;
+    .place {
+      margin: 0 0 24px;
+      color: var(--muted);
       font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.22em;
+      font-weight: 500;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
     }
 
     h1,
     h2,
-    h3,
-    p {
-      margin-top: 0;
+    p { margin-top: 0; }
+
+    h1,
+    h2 {
+      font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+      font-weight: 300;
+      letter-spacing: -0.04em;
     }
 
     h1 {
       max-width: 760px;
-      margin-bottom: 30px;
-      font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
-      font-size: clamp(56px, 9vw, 132px);
-      font-weight: 200;
-      letter-spacing: -0.035em;
-      line-height: 0.86;
+      margin-bottom: 36px;
+      font-size: clamp(72px, 10vw, 150px);
+      line-height: 0.84;
     }
 
-    .hero p {
-      max-width: 440px;
-      color: var(--soft);
-      font-size: clamp(18px, 1.35vw, 22px);
+    .line {
+      color: #44443e;
+      font-size: clamp(20px, 1.7vw, 27px);
       font-weight: 300;
-      line-height: 1.9;
+      letter-spacing: 0.04em;
     }
 
-    .quiet-mark {
-      margin: 0;
-      justify-self: center;
-      width: min(260px, 42vw);
-      aspect-ratio: 1;
-      border: 1px solid #d7d7d2;
-      border-radius: 50%;
-      position: relative;
-      opacity: 0.72;
-    }
-
-    .quiet-mark::before,
-    .quiet-mark::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-    }
-
-    .quiet-mark::before {
-      width: 44%;
-      aspect-ratio: 1;
-      left: 18%;
-      top: 20%;
-      border: 1px solid #e5e5e0;
-    }
-
-    .quiet-mark::after {
-      width: 8px;
-      aspect-ratio: 1;
-      right: 26%;
-      bottom: 28%;
-      background: #c9c9c1;
-    }
-
-    .quiet-link-row {
+    .doors {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px 34px;
-      margin-top: 42px;
+      gap: 14px 38px;
+      margin-top: 56px;
     }
 
-    .quiet-link {
-      min-height: 44px;
-      display: inline-flex;
-      align-items: center;
-      color: #242420;
+    .door {
+      color: #1d1d19;
       font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.11em;
+      font-weight: 500;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      text-decoration: none;
     }
 
-    .silence {
-      min-height: 46vh;
+    .mark {
+      width: min(250px, 40vw);
+      aspect-ratio: 1;
+      justify-self: center;
+      border: 1px solid #ddddda;
+      border-radius: 50%;
+      position: relative;
+      opacity: 0.64;
+    }
+
+    .mark::before {
+      content: "";
+      position: absolute;
+      width: 42%;
+      aspect-ratio: 1;
+      left: 19%;
+      top: 21%;
+      border: 1px solid #ecece8;
+      border-radius: 50%;
+    }
+
+    .mark::after {
+      content: "";
+      position: absolute;
+      width: 7px;
+      aspect-ratio: 1;
+      right: 27%;
+      bottom: 29%;
+      background: #c7c7c0;
+      border-radius: 50%;
+    }
+
+    .pause {
+      min-height: 54vh;
       display: grid;
       place-items: center;
-      padding: clamp(72px, 12vw, 180px) var(--gutter);
-      border-top: 1px solid var(--pale);
-      border-bottom: 1px solid var(--pale);
+      padding: clamp(78px, 12vw, 180px) var(--gutter);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
     }
 
-    .silence p {
-      max-width: 780px;
-      color: #20201d;
+    .pause p {
+      max-width: 760px;
+      margin: 0;
       font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
-      font-size: clamp(30px, 4vw, 58px);
-      font-weight: 200;
-      letter-spacing: -0.035em;
-      line-height: 1.18;
+      font-size: clamp(38px, 5vw, 74px);
+      font-weight: 300;
+      letter-spacing: -0.04em;
+      line-height: 1.02;
       text-align: center;
     }
 
     .walk {
-      padding: clamp(90px, 14vw, 220px) var(--gutter);
+      padding: clamp(96px, 14vw, 230px) var(--gutter);
     }
 
-    .walk-row {
+    .panel {
+      min-height: 86vh;
       display: grid;
-      grid-template-columns: minmax(0, 0.72fr) minmax(0, 0.88fr);
-      gap: clamp(50px, 10vw, 160px);
+      grid-template-columns: minmax(0, 0.58fr) minmax(0, 0.7fr);
       align-items: center;
-      max-width: 1280px;
-      margin: 0 auto clamp(120px, 16vw, 230px);
+      gap: clamp(58px, 10vw, 170px);
+      max-width: 1240px;
+      margin: 0 auto clamp(96px, 13vw, 210px);
     }
 
-    .walk-row.reverse {
-      grid-template-columns: minmax(0, 0.88fr) minmax(0, 0.72fr);
+    .panel.reverse {
+      grid-template-columns: minmax(0, 0.72fr) minmax(0, 0.5fr);
     }
 
-    .walk-row:last-child {
-      margin-bottom: 0;
-    }
+    .panel:last-child { margin-bottom: 0; }
 
-    .walk-copy {
-      max-width: 520px;
-    }
+    .panel figure { margin: 0; }
 
-    .walk-copy h2 {
-      margin-bottom: 24px;
-      font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
-      font-size: clamp(38px, 5.5vw, 82px);
-      font-weight: 200;
-      letter-spacing: -0.05em;
-      line-height: 0.98;
-    }
-
-    .walk-copy p {
-      color: var(--soft);
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 1.95;
-    }
-
-    .walk-image {
-      margin: 0;
-    }
-
-    .walk-image img {
+    .panel img {
       display: block;
       width: 100%;
-      filter: saturate(0.58) contrast(0.9) brightness(1.12);
-    }
-
-    .walk-image.small {
-      max-width: 480px;
-      justify-self: center;
-    }
-
-    .walk-image.small img {
-      aspect-ratio: 3 / 4;
+      max-height: 72vh;
       object-fit: cover;
+      filter: saturate(0.55) contrast(0.92) brightness(1.1);
     }
 
-    .reveal {
-      min-height: 90vh;
+    .panel.narrow img {
+      aspect-ratio: 4 / 5;
+    }
+
+    .caption {
+      max-width: 480px;
+    }
+
+    .caption h2 {
+      margin-bottom: 20px;
+      font-size: clamp(58px, 8vw, 118px);
+      line-height: 0.86;
+    }
+
+    .caption p {
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-size: 19px;
+      font-weight: 300;
+      letter-spacing: 0.035em;
+    }
+
+    .inside {
+      min-height: 92vh;
       display: grid;
       align-items: end;
-      padding: clamp(84px, 12vw, 180px) var(--gutter);
-      background: #fff;
-      border-top: 1px solid var(--pale);
+      padding: clamp(92px, 13vw, 190px) var(--gutter);
+      border-top: 1px solid var(--line);
     }
 
-    .reveal-inner {
-      max-width: 980px;
-    }
-
-    .reveal h2 {
+    .inside h2 {
       max-width: 860px;
-      margin-bottom: 34px;
-      font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
-      font-size: clamp(54px, 8vw, 124px);
-      font-weight: 200;
-      letter-spacing: -0.06em;
-      line-height: 0.92;
+      margin-bottom: 54px;
+      font-size: clamp(68px, 10vw, 150px);
+      line-height: 0.84;
     }
 
-    .reveal p {
-      max-width: 570px;
-      color: var(--soft);
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 1.9;
+    .inside-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1px;
+      max-width: 1180px;
+      background: var(--line);
     }
 
-    .sample-footer {
+    .inside a {
+      min-height: 150px;
+      padding: 24px;
+      background: #fff;
+      color: #22221f;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    footer {
       display: flex;
       justify-content: space-between;
-      gap: 30px;
+      gap: 28px;
       padding: 54px var(--gutter);
-      color: #6d6d67;
-      font-size: 13px;
-      letter-spacing: 0.08em;
+      border-top: 1px solid var(--line);
+      color: #777771;
+      font-size: 12px;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      border-top: 1px solid var(--pale);
     }
 
     @media (max-width: 760px) {
-      .sample-header {
+      .header {
+        min-height: 88px;
         align-items: flex-start;
         flex-direction: column;
       }
 
-      .sample-nav {
+      nav {
         width: 100%;
-        gap: 18px;
+        gap: 22px;
         overflow-x: auto;
         white-space: nowrap;
       }
 
       .hero,
-      .walk-row,
-      .walk-row.reverse {
+      .panel,
+      .panel.reverse,
+      .inside-grid {
         grid-template-columns: 1fr;
       }
 
       .hero {
         min-height: auto;
-        padding-top: 42px;
+        padding-top: 48px;
       }
 
-      .quiet-mark {
+      .mark {
         order: -1;
-        width: min(190px, 54vw);
+        width: min(170px, 52vw);
       }
 
       h1 {
-        font-size: clamp(58px, 19vw, 86px);
+        font-size: clamp(70px, 20vw, 102px);
       }
 
-      .silence p {
+      .pause p {
         text-align: left;
       }
 
-      .walk-row,
-      .walk-row.reverse {
-        margin-bottom: 100px;
+      .panel {
+        min-height: auto;
       }
 
-      .sample-footer {
+      .panel img {
+        max-height: none;
+      }
+
+      .inside a {
+        min-height: 88px;
+      }
+
+      footer {
         flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
-  <header class="sample-header">
-    <a class="sample-brand" href="index-silent-sample.html" aria-label="KoffyKraft sample home">KoffyKraft</a>
-    <nav class="sample-nav" aria-label="Quiet sample navigation">
-      <a href="#walk">Walk</a>
-      <a href="#leaf">Leaf</a>
-      <a href="#soil">Soil</a>
-      <a href="#cup">Cup</a>
+  <header class="header">
+    <a class="brand" href="index-silent-sample.html" aria-label="KoffyKraft sample home">KoffyKraft</a>
+    <nav aria-label="Quiet sample navigation">
+      <a href="#inside">Inside</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" aria-labelledby="sample-title">
       <div>
-        <p class="overline">Karavaloor</p>
-        <h1 id="sample-title">A slow place for attention.</h1>
-        <p>No announcement at the gate. Only shade, water, leaf, soil, and the feeling that someone has been observing carefully.</p>
-        <div class="quiet-link-row">
-          <a class="quiet-link" href="#walk">Begin walking</a>
-          <a class="quiet-link" href="#cup">Find the cup</a>
+        <p class="place">Karavaloor</p>
+        <h1 id="sample-title">Stillness first.</h1>
+        <p class="line">leaf / fire / water / cup</p>
+        <div class="doors">
+          <a class="door" href="#walk">enter slowly</a>
+          <a class="door" href="#inside">the work inside</a>
         </div>
       </div>
-      <div class="quiet-mark" aria-hidden="true"></div>
+      <div class="mark" aria-hidden="true"></div>
     </section>
 
-    <section class="silence" aria-label="A quiet note">
-      <p>The work is not to impress quickly. It is to stay long enough for small differences to become visible.</p>
+    <section class="pause" aria-label="Quiet note">
+      <p>If it fits, stay a while.</p>
     </section>
 
     <section id="walk" class="walk">
-      <div id="leaf" class="walk-row">
-        <figure class="walk-image small">
-          <img src="assets/site/home-living-root.jpg" alt="Leaf mulch and young planting work at the estate">
+      <article class="panel narrow">
+        <figure>
+          <img src="assets/site/citane-dried-leaves.jpg" alt="Dried leaves observed closely">
         </figure>
-        <div class="walk-copy">
-          <p class="overline">Leaf</p>
-          <h2>First, the plant.</h2>
-          <p>Before the drink has a name, there is leaf, shade, pruning, rain, and the patient return of organic matter to the ground.</p>
-          <a class="quiet-link" href="buna/">Buna notes</a>
+        <div class="caption">
+          <p class="place">Leaf</p>
+          <h2>Before the cup.</h2>
+          <a class="door" href="buna/">enter Buna</a>
         </div>
-      </div>
+      </article>
 
-      <div id="soil" class="walk-row reverse">
-        <div class="walk-copy">
-          <p class="overline">Soil</p>
-          <h2>The farm is part of the cup.</h2>
-          <p>The estate is not scenery around the work. It is the work: roots, mulch, water, spice, fruit, fungal life, and climate memory.</p>
-          <a class="quiet-link" href="training/lrn/">Living root handbook</a>
+      <article class="panel reverse">
+        <div class="caption">
+          <p class="place">Fire</p>
+          <h2>Small batches.</h2>
+          <a class="door" href="learn/">enter learning</a>
         </div>
-        <figure class="walk-image">
-          <img src="assets/site/home-estate-quiet.jpg" alt="Shade and planting rows at Thumpassery Estate">
+        <figure>
+          <img src="assets/site/home-roaster-detail.jpg" alt="A quiet detail of the KoffyKraft coffee roaster">
         </figure>
-      </div>
+      </article>
+
+      <article class="panel narrow">
+        <figure>
+          <img src="assets/site/citane-amber-cup.jpg" alt="Amber infusion in a clear glass">
+        </figure>
+        <div class="caption">
+          <p class="place">Water</p>
+          <h2>Slow extraction.</h2>
+          <a class="door" href="citane/">enter Citane</a>
+        </div>
+      </article>
     </section>
 
-    <section id="cup" class="reveal">
-      <div class="reveal-inner">
-        <p class="overline">Then, quietly</p>
-        <h2>It becomes coffee.</h2>
-        <p>Roasted in small batches, tasted carefully, brewed simply, and shared as learning rather than persuasion.</p>
-        <div class="quiet-link-row">
-          <a class="quiet-link" href="training/brewing/">Brewing</a>
-          <a class="quiet-link" href="training/cupping/">Cupping</a>
-          <a class="quiet-link" href="citane/">Citane</a>
+    <section id="inside" class="inside">
+      <div>
+        <p class="place">Inside</p>
+        <h2>Coffee, finally.</h2>
+        <div class="inside-grid" aria-label="Explore inside KoffyKraft">
+          <a href="training/brewing/">Brewing</a>
+          <a href="training/cupping/">Cupping</a>
+          <a href="buna/">Buna</a>
+          <a href="citane/">Citane</a>
+          <a href="training/lrn/">Estate notes</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="sample-footer">
+  <footer>
     <span>KoffyKraft</span>
-    <span>Quiet sample direction</span>
+    <span>quiet sample</span>
   </footer>
 </body>
 </html>
