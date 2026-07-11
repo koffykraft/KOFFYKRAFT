@@ -91,13 +91,14 @@
     img {
       display: block;
       width: 100%;
-      object-fit: cover;
+      height: auto;
+      object-fit: contain;
       filter: saturate(0.62) contrast(0.94) brightness(1.06);
     }
 
     .first img {
-      aspect-ratio: 3 / 4;
       max-height: 62vh;
+      object-fit: contain;
     }
 
     .first figure {
@@ -126,11 +127,7 @@
 
     .room img {
       max-height: 78vh;
-      aspect-ratio: 4 / 5;
-    }
-
-    .room.wide img {
-      aspect-ratio: 1 / 1;
+      object-fit: contain;
     }
 
     .room nav {
