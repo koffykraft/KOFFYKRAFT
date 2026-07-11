@@ -84,8 +84,12 @@
     }
 
     .first figure,
-    .room figure {
+    .room figure,
+    .first img,
+    .room img {
       margin: 0;
+      break-inside: avoid;
+      page-break-inside: avoid;
     }
 
     img {
@@ -117,6 +121,8 @@
       grid-template-columns: minmax(0, 0.62fr) minmax(160px, 0.28fr);
       align-items: center;
       gap: clamp(46px, 9vw, 150px);
+      break-inside: avoid;
+      page-break-inside: avoid;
     }
 
     .room:nth-child(even) {
@@ -141,20 +147,13 @@
     }
 
     .index {
-      min-height: 92vh;
+      min-height: 78vh;
       display: grid;
-      align-items: end;
+      align-items: center;
       padding: clamp(96px, 14vw, 204px) var(--gutter);
       border-top: 1px solid var(--line);
-    }
-
-    .index h2 {
-      margin: 0 0 62px;
-      font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
-      font-size: clamp(76px, 11vw, 150px);
-      font-weight: 300;
-      letter-spacing: -0.055em;
-      line-height: 0.84;
+      break-inside: avoid;
+      page-break-inside: avoid;
     }
 
     .index-grid {
@@ -233,6 +232,22 @@
         min-height: 84px;
       }
     }
+
+    @media print {
+      .first,
+      .rooms,
+      .room,
+      .index,
+      .foot {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .room {
+        min-height: auto;
+        margin-bottom: 90px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -259,13 +274,13 @@
         </nav>
       </article>
 
-      <article class="room wide">
-        <nav aria-label="Related rooms">
-          <a href="learn/">Coffee</a>
-        </nav>
+      <article class="room">
         <figure>
-          <img src="assets/site/sample-roaster-full.jpg" alt="Coffee roaster">
+          <img src="assets/site/sample-leaf-drying.jpg" alt="Coffee leaves drying on a mesh tray">
         </figure>
+        <nav aria-label="Related rooms">
+          <a href="citane/">Citane</a>
+        </nav>
       </article>
 
       <article class="room">
@@ -274,6 +289,24 @@
         </figure>
         <nav aria-label="Related rooms">
           <a href="citane/">Citane</a>
+        </nav>
+      </article>
+
+      <article class="room">
+        <figure>
+          <img src="assets/site/home-beans.jpg" alt="Roasted coffee beans">
+        </figure>
+        <nav aria-label="Related rooms">
+          <a href="learn/">Coffee</a>
+        </nav>
+      </article>
+
+      <article class="room">
+        <figure>
+          <img src="assets/site/sample-fire.jpg" alt="Fire">
+        </figure>
+        <nav aria-label="Related rooms">
+          <a href="learn/">Coffee</a>
         </nav>
       </article>
 
@@ -289,15 +322,12 @@
     </section>
 
     <section id="index" class="index">
-      <div>
-        <h2>Coffee.</h2>
-        <div class="index-grid">
-          <a href="learn/">Coffee</a>
-          <a href="training/brewing/">Brewing</a>
-          <a href="training/cupping/">Cupping</a>
-          <a href="buna/">Buna</a>
-          <a href="citane/">Citane</a>
-        </div>
+      <div class="index-grid">
+        <a href="learn/">Coffee</a>
+        <a href="training/brewing/">Brewing</a>
+        <a href="training/cupping/">Cupping</a>
+        <a href="buna/">Buna</a>
+        <a href="citane/">Citane</a>
       </div>
     </section>
   </main>
