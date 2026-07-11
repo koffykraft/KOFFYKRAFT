@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KoffyKraft | Quiet Sample</title>
-  <meta name="description" content="A quiet sample homepage direction for KoffyKraft.">
+  <title>KoffyKraft | Sample</title>
+  <meta name="description" content="KoffyKraft sample page.">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Cormorant+Garamond:wght@300;400&display=swap");
 
     :root {
-      --ink: #141414;
-      --muted: #666660;
-      --line: #eeeeea;
+      --ink: #121212;
+      --muted: #70706b;
+      --line: #ecece8;
       --white: #fff;
       --gutter: clamp(24px, 6vw, 96px);
     }
@@ -25,213 +25,166 @@
       background: var(--white);
       color: var(--ink);
       font-family: "Barlow Condensed", "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.65;
+      line-height: 1.5;
     }
 
     a { color: inherit; }
 
-    .header {
-      min-height: 96px;
+    .header,
+    .footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 28px;
-      padding: 26px var(--gutter);
-    }
-
-    .brand {
-      font-size: clamp(27px, 3vw, 42px);
-      font-weight: 300;
-      letter-spacing: -0.015em;
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      gap: clamp(24px, 4vw, 56px);
-      color: #33332f;
+      padding: 28px var(--gutter);
+      color: #1f1f1d;
       font-size: 12px;
-      font-weight: 500;
+      font-weight: 400;
       letter-spacing: 0.16em;
       text-transform: uppercase;
     }
 
-    nav a,
-    .index-word,
-    .inside a {
+    .brand {
+      font-size: clamp(28px, 3vw, 44px);
+      font-weight: 300;
+      letter-spacing: -0.018em;
+      text-transform: none;
+      text-decoration: none;
+    }
+
+    .header a:not(.brand),
+    .footer a,
+    .room-link {
       min-height: 44px;
       display: inline-flex;
       align-items: center;
       text-decoration: none;
     }
 
-    nav a:hover,
-    .index-word:hover,
-    .inside a:hover {
+    .header a:not(.brand):hover,
+    .footer a:hover,
+    .room-link:hover {
       text-decoration: underline;
       text-underline-offset: 8px;
     }
 
-    .hero {
-      min-height: calc(100vh - 96px);
+    .sight {
+      min-height: calc(100vh - 98px);
       display: grid;
-      grid-template-columns: minmax(0, 0.9fr) minmax(220px, 0.38fr);
+      grid-template-columns: minmax(0, 0.72fr) minmax(240px, 0.48fr);
       align-items: center;
-      gap: clamp(72px, 12vw, 190px);
-      padding: clamp(72px, 10vw, 150px) var(--gutter);
+      gap: clamp(54px, 10vw, 170px);
+      padding: clamp(72px, 11vw, 164px) var(--gutter);
     }
 
     .place {
-      margin: 0 0 24px;
+      margin: 0 0 26px;
       color: var(--muted);
       font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.24em;
+      font-weight: 400;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
     }
 
     h1,
-    h2,
-    p { margin-top: 0; }
-
-    h1,
     h2 {
+      margin: 0;
       font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
       font-weight: 300;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.045em;
     }
 
     h1 {
       max-width: 760px;
-      margin-bottom: 36px;
-      font-size: clamp(72px, 10vw, 150px);
+      font-size: clamp(76px, 11vw, 168px);
+      line-height: 0.82;
+    }
+
+    .sight-photo {
+      margin: 0;
+      justify-self: center;
+      width: min(360px, 100%);
+    }
+
+    .sight-photo img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      filter: saturate(0.58) contrast(0.92) brightness(1.08);
+    }
+
+    .rooms {
+      padding: clamp(54px, 9vw, 138px) var(--gutter) clamp(96px, 15vw, 240px);
+    }
+
+    .room {
+      min-height: 88vh;
+      max-width: 1240px;
+      margin: 0 auto clamp(110px, 15vw, 240px);
+      display: grid;
+      grid-template-columns: minmax(0, 0.64fr) minmax(0, 0.52fr);
+      align-items: center;
+      gap: clamp(56px, 10vw, 170px);
+    }
+
+    .room:nth-child(even) {
+      grid-template-columns: minmax(0, 0.52fr) minmax(0, 0.64fr);
+    }
+
+    .room:last-child { margin-bottom: 0; }
+
+    .room figure {
+      margin: 0;
+    }
+
+    .room img {
+      display: block;
+      width: 100%;
+      max-height: 76vh;
+      object-fit: cover;
+      filter: saturate(0.58) contrast(0.93) brightness(1.08);
+    }
+
+    .room.narrow img {
+      aspect-ratio: 4 / 5;
+    }
+
+    figcaption {
+      display: grid;
+      gap: 18px;
+      align-content: center;
+    }
+
+    figcaption h2 {
+      font-size: clamp(66px, 9vw, 128px);
       line-height: 0.84;
     }
 
-    .line {
-      color: #44443e;
-      font-size: clamp(20px, 1.7vw, 27px);
-      font-weight: 300;
-      letter-spacing: 0.04em;
-    }
-
-    .index-line {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px 38px;
-      margin-top: 56px;
-    }
-
-    .index-word {
-      color: #1d1d19;
+    .room-link {
+      width: max-content;
+      color: #20201d;
       font-size: 13px;
-      font-weight: 500;
+      font-weight: 400;
       letter-spacing: 0.16em;
       text-transform: uppercase;
     }
 
-    .object-note {
-      max-width: 380px;
-      margin: 18px 0 0;
-      color: var(--muted);
-      font-size: 17px;
-      font-weight: 300;
-      letter-spacing: 0.035em;
-      line-height: 1.7;
-    }
-
-    .mark {
-      width: min(250px, 40vw);
-      aspect-ratio: 1;
-      justify-self: center;
-      border: 1px solid #ddddda;
-      border-radius: 50%;
-      position: relative;
-      opacity: 0.64;
-    }
-
-    .mark::before {
-      content: "";
-      position: absolute;
-      width: 42%;
-      aspect-ratio: 1;
-      left: 19%;
-      top: 21%;
-      border: 1px solid #ecece8;
-      border-radius: 50%;
-    }
-
-    .mark::after {
-      content: "";
-      position: absolute;
-      width: 7px;
-      aspect-ratio: 1;
-      right: 27%;
-      bottom: 29%;
-      background: #c7c7c0;
-      border-radius: 50%;
-    }
-
-    .walk {
-      padding: clamp(64px, 10vw, 160px) var(--gutter) clamp(96px, 14vw, 230px);
-    }
-
-    .panel {
-      min-height: 86vh;
-      display: grid;
-      grid-template-columns: minmax(0, 0.58fr) minmax(0, 0.7fr);
-      align-items: center;
-      gap: clamp(58px, 10vw, 170px);
-      max-width: 1240px;
-      margin: 0 auto clamp(96px, 13vw, 210px);
-    }
-
-    .panel.reverse {
-      grid-template-columns: minmax(0, 0.72fr) minmax(0, 0.5fr);
-    }
-
-    .panel:last-child { margin-bottom: 0; }
-
-    .panel figure { margin: 0; }
-
-    .panel img {
-      display: block;
-      width: 100%;
-      max-height: 72vh;
-      object-fit: cover;
-      filter: saturate(0.55) contrast(0.92) brightness(1.1);
-    }
-
-    .panel.narrow img {
-      aspect-ratio: 4 / 5;
-    }
-
-    .caption {
-      max-width: 480px;
-    }
-
-    .caption h2 {
-      margin-bottom: 20px;
-      font-size: clamp(58px, 8vw, 118px);
-      line-height: 0.86;
-    }
-
-    .inside {
+    .index {
       min-height: 92vh;
       display: grid;
       align-items: end;
-      padding: clamp(92px, 13vw, 190px) var(--gutter);
+      padding: clamp(96px, 14vw, 204px) var(--gutter);
       border-top: 1px solid var(--line);
     }
 
-    .inside h2 {
-      max-width: 860px;
-      margin-bottom: 54px;
-      font-size: clamp(68px, 10vw, 150px);
+    .index h2 {
+      margin-bottom: 58px;
+      font-size: clamp(76px, 11vw, 150px);
       line-height: 0.84;
     }
 
-    .inside-grid {
+    .index-grid {
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 1px;
@@ -239,78 +192,83 @@
       background: var(--line);
     }
 
-    .inside a {
-      min-height: 150px;
+    .index-grid a {
+      min-height: 148px;
+      display: flex;
+      align-items: end;
       padding: 24px;
       background: #fff;
       color: #22221f;
       font-size: 13px;
-      font-weight: 500;
+      font-weight: 400;
       letter-spacing: 0.16em;
       text-transform: uppercase;
+      text-decoration: none;
     }
 
-    footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 28px;
-      padding: 54px var(--gutter);
+    .index-grid a:hover {
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+
+    .footer {
       border-top: 1px solid var(--line);
       color: #777771;
-      font-size: 12px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
+    }
+
+    .footer a {
+      color: #777771;
     }
 
     @media (max-width: 760px) {
-      .header {
-        min-height: 88px;
+      .header,
+      .footer {
         align-items: flex-start;
         flex-direction: column;
+        padding: 24px;
       }
 
-      nav {
-        width: 100%;
-        gap: 22px;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
-
-      .hero,
-      .panel,
-      .panel.reverse,
-      .inside-grid {
+      .sight,
+      .room,
+      .room:nth-child(even),
+      .index-grid {
         grid-template-columns: 1fr;
       }
 
-      .hero {
+      .sight {
         min-height: auto;
-        padding-top: 48px;
-      }
-
-      .mark {
-        order: -1;
-        width: min(170px, 52vw);
+        padding: 54px 24px 84px;
       }
 
       h1 {
-        font-size: clamp(70px, 20vw, 102px);
+        font-size: clamp(76px, 22vw, 112px);
       }
 
-      .panel {
+      .sight-photo {
+        order: -1;
+        width: min(240px, 68vw);
+      }
+
+      .rooms,
+      .index {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .room {
         min-height: auto;
       }
 
-      .panel img {
+      .room img {
         max-height: none;
       }
 
-      .inside a {
-        min-height: 88px;
+      figcaption h2 {
+        font-size: clamp(58px, 18vw, 92px);
       }
 
-      footer {
-        flex-direction: column;
+      .index-grid a {
+        min-height: 86px;
       }
     }
   </style>
@@ -318,81 +276,72 @@
 <body>
   <header class="header">
     <a class="brand" href="index-silent-sample.html" aria-label="KoffyKraft sample home">KoffyKraft</a>
-    <nav aria-label="Quiet sample navigation">
-      <a href="#inside">Index</a>
-    </nav>
+    <a href="#index">index</a>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="sample-title">
+    <section class="sight" aria-labelledby="sample-title">
       <div>
         <p class="place">Karavaloor</p>
-        <h1 id="sample-title">KoffyKraft Coffee.</h1>
-        <p class="line">roastery / leaf / cup / estate</p>
-        <div class="index-line" aria-label="KoffyKraft index">
-          <a class="index-word" href="#walk">objects</a>
-          <a class="index-word" href="#inside">index</a>
-        </div>
+        <h1 id="sample-title">Coffee.</h1>
       </div>
-      <div class="mark" aria-hidden="true"></div>
+      <figure class="sight-photo">
+        <img src="assets/site/home-roaster-detail.jpg" alt="KoffyKraft coffee roaster">
+      </figure>
     </section>
 
-    <section id="walk" class="walk">
-      <article class="panel narrow">
+    <section class="rooms" aria-label="Objects">
+      <article class="room narrow">
         <figure>
-          <img src="assets/site/citane-dried-leaves.jpg" alt="Processed coffee leaves for Citane">
+          <img src="assets/site/citane-dried-leaves.jpg" alt="Processed coffee leaves">
         </figure>
-        <div class="caption">
-          <p class="place">Object 01</p>
-          <h2>Processed coffee leaves.</h2>
-          <p class="object-note">Coffee leaves after selection and drying. The material before infusion.</p>
-          <a class="index-word" href="buna/">Buna</a>
-        </div>
+        <figcaption>
+          <h2>Leaves.</h2>
+          <a class="room-link" href="citane/">Citane</a>
+        </figcaption>
       </article>
 
-      <article class="panel reverse">
-        <div class="caption">
-          <p class="place">Object 02</p>
-          <h2>Roaster detail.</h2>
-          <p class="object-note">A working machine. Heat, smell, timing, and small batches.</p>
-          <a class="index-word" href="learn/">Learning</a>
-        </div>
+      <article class="room">
+        <figcaption>
+          <h2>Roaster.</h2>
+          <a class="room-link" href="learn/">Coffee</a>
+        </figcaption>
         <figure>
-          <img src="assets/site/home-roaster-detail.jpg" alt="A quiet detail of the KoffyKraft coffee roaster">
+          <img src="assets/site/home-roaster-detail.jpg" alt="Roaster detail">
         </figure>
       </article>
 
-      <article class="panel narrow">
+      <article class="room narrow">
         <figure>
-          <img src="assets/site/citane-amber-cup.jpg" alt="Citane brew in a clear glass">
+          <img src="assets/site/citane-amber-cup.jpg" alt="Citane brew">
         </figure>
-        <div class="caption">
-          <p class="place">Object 03</p>
-          <h2>Citane brew.</h2>
-          <p class="object-note">A coffee-leaf infusion. Amber, light, and quiet on the palate.</p>
-          <a class="index-word" href="citane/">Citane</a>
-        </div>
+        <figcaption>
+          <h2>Cup.</h2>
+          <a class="room-link" href="training/brewing/">Brewing</a>
+          <a class="room-link" href="training/cupping/">Cupping</a>
+        </figcaption>
       </article>
     </section>
 
-    <section id="inside" class="inside">
+    <section id="index" class="index" aria-label="Index">
       <div>
         <p class="place">Index</p>
-        <h2>Roastery.</h2>
-        <div class="inside-grid" aria-label="Explore inside KoffyKraft">
+        <h2>KoffyKraft.</h2>
+        <div class="index-grid">
+          <a href="learn/">Coffee</a>
           <a href="training/brewing/">Brewing</a>
           <a href="training/cupping/">Cupping</a>
           <a href="buna/">Buna</a>
           <a href="citane/">Citane</a>
-          <a href="training/lrn/">Estate notes</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <span>KoffyKraft</span>
-    <span>quiet sample</span>
+    <span>Karavaloor</span>
+    <a href="#note">note</a>
   </footer>
 </body>
 </html>
