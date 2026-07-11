@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
   <title id="title">Cupping mark</title>
-  <desc id="desc">A loose pencil-like line drawing of three cupping bowls and one spoon.</desc>
+  <desc id="desc">A loose pencil-like line drawing of three cupping bowls.</desc>
   <defs>
     <filter id="soft-pencil" x="-8%" y="-8%" width="116%" height="116%">
       <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" seed="7" result="noise"/>
@@ -48,8 +48,4 @@
   <path class="coffee" d="M532 157c19-21 59-23 77-2 17 19 4 48-27 56-34 8-63-3-67-25-2-10 4-20 17-29z"/>
   <path class="line thin" d="M552 141c21 20 29 41 23 64"/>
 
-  <path class="line" d="M499 67c31 28 25 65-21 111-37 37-77 77-119 119"/>
-  <path class="line thin ghost" d="M490 72c35 40 16 77-51 137"/>
-  <path class="line" d="M351 288l-25 24c-6 6-16 6-22 0l-3-3c-6-6-6-15 0-21l25-25z"/>
-  <path class="line thin" d="M506 66c12 27 6 53-18 77"/>
 </svg>
