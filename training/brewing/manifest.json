@@ -1,40 +1,42 @@
 {
   "course": "brewing",
+  "revision": "expanded-self-study",
+  "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Brewing Class\\Coffee Brewing Curriculum.docx",
   "lessons": [
     {
       "title": "Lesson 1: Introduction to Coffee and Brewing Basics",
       "file": "lessons/lesson-1-introduction-to-coffee-and-brewing-basics.html"
     },
     {
-      "title": "Lesson 2: The Essentials \u2013 Brew Ratio, Grind Size, and Water Temperature",
+      "title": "Lesson 2: The Essentials - Brew Ratio, Grind Size, and Water Temperature",
       "file": "lessons/lesson-2-the-essentials-brew-ratio-grind-size-and-water-temperature.html"
     },
     {
-      "title": "Lesson 3: Immersion Brewing \u2013 French Press Fundamentals",
+      "title": "Lesson 3: Immersion Brewing - French Press Fundamentals",
       "file": "lessons/lesson-3-immersion-brewing-french-press-fundamentals.html"
     },
     {
-      "title": "Lesson 4: Pour-Over Basics \u2013 Brewing with a Simple Dripper (V60)",
+      "title": "Lesson 4: Pour-Over Basics - Brewing with a Simple Dripper (V60)",
       "file": "lessons/lesson-4-pour-over-basics-brewing-with-a-simple-dripper-v60.html"
     },
     {
-      "title": "Lesson 5: Automatic Drip Brewing \u2013 Getting the Most from Your Coffee Maker",
+      "title": "Lesson 5: Automatic Drip Brewing - Getting the Most from Your Coffee Maker",
       "file": "lessons/lesson-5-automatic-drip-brewing-getting-the-most-from-your-coffee-maker.html"
     },
     {
-      "title": "Lesson 6: Understanding Extraction \u2013 Taste and Troubleshoot Your Coffee",
+      "title": "Lesson 6: Understanding Extraction - Taste and Troubleshoot Your Coffee",
       "file": "lessons/lesson-6-understanding-extraction-taste-and-troubleshoot-your-coffee.html"
     },
     {
-      "title": "Lesson 7: Advanced Pour-Over Techniques \u2013 Refining Your V60 (and Other Drippers)",
+      "title": "Lesson 7: Advanced Pour-Over Techniques - Refining Your V60 (and Other Drippers)",
       "file": "lessons/lesson-7-advanced-pour-over-techniques-refining-your-v60-and-other-drippers.html"
     },
     {
-      "title": "Lesson 8: Immersion Beyond French Press \u2013 Mastering AeroPress (and Intro to Cold Brew)",
+      "title": "Lesson 8: Immersion Beyond French Press - Mastering AeroPress (and Intro to Cold Brew)",
       "file": "lessons/lesson-8-immersion-beyond-french-press-mastering-aeropress-and-intro-to-cold-brew.html"
     },
     {
-      "title": "Lesson 9: Espresso Fundamentals \u2013 Pulling Your First Shot",
+      "title": "Lesson 9: Espresso Fundamentals - Pulling Your First Shot",
       "file": "lessons/lesson-9-espresso-fundamentals-pulling-your-first-shot.html"
     },
     {
@@ -42,23 +44,23 @@
       "file": "lessons/lesson-10-milk-steaming-and-cappuccino-basics.html"
     },
     {
-      "title": "Lesson 11: Espresso Mastery \u2013 Advanced Techniques and Tuning Variables",
+      "title": "Lesson 11: Espresso Mastery - Advanced Techniques and Tuning Variables",
       "file": "lessons/lesson-11-espresso-mastery-advanced-techniques-and-tuning-variables.html"
     },
     {
-      "title": "Lesson 12: Latte Art & Milk Mastery \u2013 Advanced Milk Techniques",
+      "title": "Lesson 12: Latte Art & Milk Mastery - Advanced Milk Techniques",
       "file": "lessons/lesson-12-latte-art-and-milk-mastery-advanced-milk-techniques.html"
     },
     {
-      "title": "Lesson 13: Water Quality & Advanced Brew Science \u2013 The Chemistry of Coffee",
+      "title": "Lesson 13: Water Quality & Advanced Brew Science - The Chemistry of Coffee",
       "file": "lessons/lesson-13-water-quality-and-advanced-brew-science-the-chemistry-of-coffee.html"
     },
     {
-      "title": "Lesson 14: Sustainable Brewing Practices \u2013 Coffee and Environmental Responsibility",
+      "title": "Lesson 14: Sustainable Brewing Practices - Coffee and Environmental Responsibility",
       "file": "lessons/lesson-14-sustainable-brewing-practices-coffee-and-environmental-responsibility.html"
     },
     {
-      "title": "Lesson 15: Continued Learning and Innovation \u2013 Staying Curious and Sharing Knowledge",
+      "title": "Lesson 15: Continued Learning and Innovation - Staying Curious and Sharing Knowledge",
       "file": "lessons/lesson-15-continued-learning-and-innovation-staying-curious-and-sharing-knowledge.html"
     }
   ]
