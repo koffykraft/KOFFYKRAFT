@@ -1,111 +1,198 @@
 {
-  "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02",
-  "support_pages": [
-    "safety.html",
-    "study-guide.html",
-    "glossary.html",
-    "references.html"
-  ],
+  "course": "roasting",
+  "revision": "open-reference",
   "lessons": [
     {
-      "title": "Lesson 1.1 \u2013 What Changes During Coffee Roasting?",
-      "file": "lessons/lesson-1-1-what-changes-during-coffee-roasting.html"
+      "code": "1.1",
+      "title": "What Changes During Coffee Roasting?",
+      "file": "lessons/lesson-1-1-what-changes-during-coffee-roasting.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.1 \u2013 What Changes During Coffee Roasting.docx"
     },
     {
-      "title": "Lesson 1.2 \u2013 Heat Transfer & Your Roaster",
-      "file": "lessons/lesson-1-2-heat-transfer-and-your-roaster.html"
+      "code": "1.2",
+      "title": "Heat Transfer & Your Roaster",
+      "file": "lessons/lesson-1-2-heat-transfer-and-your-roaster.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.2 \u2013 Heat Transfer & Your Roaster.docx"
     },
     {
-      "title": "Lesson 1.3 \u2013 Bean Density & Moisture: How They Affect Roasting",
-      "file": "lessons/lesson-1-3-bean-density-and-moisture-how-they-affect-roasting.html"
+      "code": "1.3",
+      "title": "Bean Density & Moisture: How They Affect Roasting",
+      "file": "lessons/lesson-1-3-bean-density-and-moisture-how-they-affect-roasting.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.3 \u2013 Bean Density & Moisture_How They Affect Roasting.docx"
     },
     {
-      "title": "Lesson 1.4 \u2013 Understanding First Crack & Managing Development Phase",
-      "file": "lessons/lesson-1-4-understanding-first-crack-and-managing-development-phase.html"
+      "code": "1.4",
+      "title": "Understanding First Crack & Managing Development Phase",
+      "file": "lessons/lesson-1-4-understanding-first-crack-and-managing-development-phase.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.4 \u2013 Understanding First Crack & Managing Development Phase.docx"
     },
     {
-      "title": "Lesson 1.5 \u2013 Roast Profiles: Understanding and Guiding the Curve",
-      "file": "lessons/lesson-1-5-roast-profiles-understanding-and-guiding-the-curve.html"
+      "code": "1.5",
+      "title": "Roast Profiles: Understanding and Guiding the Curve",
+      "file": "lessons/lesson-1-5-roast-profiles-understanding-and-guiding-the-curve.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.5 \u2013 Roast Profiles_Understanding and Guiding the Curve.docx"
     },
     {
-      "title": "Lesson 1.6 \u2013 Recognizing and Understanding Roast Defects",
-      "file": "lessons/lesson-1-6-recognizing-and-understanding-roast-defects.html"
+      "code": "1.6",
+      "title": "Recognizing and Understanding Roast Defects",
+      "file": "lessons/lesson-1-6-recognizing-and-understanding-roast-defects.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.6 \u2013 Recognizing and Understanding Roast Defects.docx"
     },
     {
-      "title": "Lesson 1.7 \u2013 Light, Medium, and Dark: Understanding Roast Levels in the Real World",
-      "file": "lessons/lesson-1-7-light-medium-and-dark-understanding-roast-levels-in-the-real-world.html"
+      "code": "1.7",
+      "title": "Light, Medium, and Dark: Understanding Roast Levels in the Real World",
+      "file": "lessons/lesson-1-7-light-medium-and-dark-understanding-roast-levels-in-the-real-world.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.7 \u2013 Light, Medium, and Dark_Understanding Roast Levels in the Real World.docx"
     },
     {
-      "title": "Lesson 1.8 \u2013 Matching Roast to Brew Method: Completing the Journey",
-      "file": "lessons/lesson-1-8-matching-roast-to-brew-method-completing-the-journey.html"
+      "code": "1.8",
+      "title": "Matching Roast to Brew Method: Completing the Journey",
+      "file": "lessons/lesson-1-8-matching-roast-to-brew-method-completing-the-journey.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.8 \u2013 Matching Roast to Brew Method_Completing the Journey.docx"
     },
     {
-      "title": "Lesson 1.9 \u2013 Troubleshooting Roast Problems: Learning to See, Think, and Improve",
-      "file": "lessons/lesson-1-9-troubleshooting-roast-problems-learning-to-see-think-and-improve.html"
+      "code": "1.9",
+      "title": "Troubleshooting Roast Problems: Learning to See, Think, and Improve",
+      "file": "lessons/lesson-1-9-troubleshooting-roast-problems-learning-to-see-think-and-improve.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.9 \u2013 Troubleshooting Roast Problems_Learning to See, Think, and Improve.docx"
     },
     {
-      "title": "Lesson 1.10 \u2013 Roasting for Flavor Goals",
-      "file": "lessons/lesson-1-10-roasting-for-flavor-goals.html"
+      "code": "1.10",
+      "title": "Roasting for Flavor Goals",
+      "file": "lessons/lesson-1-10-roasting-for-flavor-goals.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.10 \u2013 Roasting for Flavor Goals.docx"
     },
     {
-      "title": "Lesson 1.11 \u2013 Sample Roasting vs Production Roasting",
-      "file": "lessons/lesson-1-11-sample-roasting-vs-production-roasting.html"
+      "code": "1.11",
+      "title": "Sample Roasting vs Production Roasting",
+      "file": "lessons/lesson-1-11-sample-roasting-vs-production-roasting.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.11 \u2013 Sample Roasting vs Production Roasting.docx"
     },
     {
-      "title": "Lesson 1.12 \u2013 Preparing for Roasting (Indian Coffee Focus)",
-      "file": "lessons/lesson-1-12-preparing-for-roasting-indian-coffee-focus.html"
+      "code": "1.12",
+      "title": "Preparing for Roasting (Indian Coffee Focus)",
+      "file": "lessons/lesson-1-12-preparing-for-roasting-indian-coffee-focus.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Koffy Roasting Revised Lessons Ver02\\Lesson 1.12 \u2013 Preparing for Roasting (Indian Coffee Focus).docx"
+    },
+    {
+      "code": "2.1",
+      "title": "Understanding Post-Roast Aging & Rest",
+      "file": "lessons/lesson-2-1-understanding-post-roast-aging-and-rest.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_2_1_Post_Roast_Aging_and_Rest.docx"
+    },
+    {
+      "code": "2.2",
+      "title": "Roast Adjustments for Blend Design",
+      "file": "lessons/lesson-2-2-roast-adjustments-for-blend-design.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_2_2_Roast_Adjustments_for_Blend_Design.docx"
+    },
+    {
+      "code": "2.3",
+      "title": "Cupping & Sensory Alignment",
+      "file": "lessons/lesson-2-3-cupping-and-sensory-alignment.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson 2.3 \u2013 Cupping & Sensory Alignment.docx"
+    },
+    {
+      "code": "2.4",
+      "title": "Gas Management & Airflow Tuning",
+      "file": "lessons/lesson-2-4-gas-management-and-airflow-tuning.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_2_4_Gas_Management_and_Airflow_Tuning.docx"
+    },
+    {
+      "code": "2.5",
+      "title": "Storage & Packaging Best Practices",
+      "file": "lessons/lesson-2-5-storage-and-packaging-best-practices.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_2_5_Storage_and_Packaging_Best_Practices.docx"
+    },
+    {
+      "code": "3.1",
+      "title": "Environmental Variables in Roasting",
+      "file": "lessons/lesson-3-1-environmental-variables-in-roasting.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_3_1_Environmental_Variables_in_Roasting.docx"
+    },
+    {
+      "code": "3.2",
+      "title": "Sensory Calibration & Flavor Mapping",
+      "file": "lessons/lesson-3-2-sensory-calibration-and-flavor-mapping.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_3_2_Sensory_Calibration_and_Flavor_Mapping.docx"
+    },
+    {
+      "code": "3.3",
+      "title": "Roast Profiling with Data Tools",
+      "file": "lessons/lesson-3-3-roast-profiling-with-data-tools.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_3_3_Roast_Profiling_with_Data_Tools_FULL.docx"
+    },
+    {
+      "code": "3.4",
+      "title": "Roast Evaluation & Quality Control",
+      "file": "lessons/lesson-3-4-roast-evaluation-and-quality-control.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_3_4_Roast_Evaluation_and_Quality_Control.docx"
+    },
+    {
+      "code": "3.5",
+      "title": "Consistent Production Roasting & Scaling (Updated)",
+      "file": "lessons/lesson-3-5-consistent-production-roasting-and-scaling-updated.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_3_5_Consistent_Production_Roasting_and_Scaling.docx"
+    },
+    {
+      "code": "3.6",
+      "title": "Logging, Documentation & Roast Library Management",
+      "file": "lessons/lesson-3-6-logging-documentation-and-roast-library-management.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_3_6_Logging_Documentation_and_Roast_Library_Management.docx"
+    },
+    {
+      "code": "3.7",
+      "title": "Troubleshooting & Roast Failures",
+      "file": "lessons/lesson-3-7-troubleshooting-and-roast-failures.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_3_7_Troubleshooting_and_Roast_Failures.docx"
+    },
+    {
+      "code": "3.8",
+      "title": "Experimental Roasting & Innovation",
+      "file": "lessons/lesson-3-8-experimental-roasting-and-innovation.html",
+      "source": "C:\\Users\\user\\OneDrive\\Koffy Kraft\\KoffyKraft Coffee Roasting Class\\Lesson_3_8_Experimental_Roasting_and_Innovation.docx"
     }
   ],
   "references": [
-    {
-      "title": "SCA Coffee Skills Program - Roasting module",
-      "url": "https://education.sca.coffee/coffee-skills-program",
-      "note": "Industry training pathway covering roasting concepts, profile control, color, equipment operation, and production workflow.",
-      "tags": [
-        "training",
-        "roasting",
-        "curriculum"
-      ]
-    },
-    {
-      "title": "SCA Coffee Value Assessment",
-      "url": "https://sca.coffee/value-assessment",
-      "note": "Current SCA framework for evaluating coffee value and sensory attributes.",
-      "tags": [
-        "sensory",
-        "quality",
-        "assessment"
-      ]
-    },
-    {
-      "title": "World Coffee Research Sensory Lexicon",
-      "url": "https://worldcoffeeresearch.org/resources/sensory-lexicon",
-      "note": "A structured vocabulary for coffee sensory description and calibration.",
-      "tags": [
-        "sensory",
-        "flavor",
-        "calibration"
-      ]
-    },
-    {
-      "title": "Coffee Board of India",
-      "url": "https://coffeeboard.gov.in/",
-      "note": "Official Indian coffee authority; useful context for Indian origins, production, quality, and sector information.",
-      "tags": [
-        "india",
-        "origin",
-        "coffee board"
-      ]
-    },
-    {
-      "title": "International Coffee Organization",
-      "url": "https://icocoffee.org/",
-      "note": "Global intergovernmental coffee organization with coffee market and sector resources.",
-      "tags": [
-        "global",
-        "market",
-        "coffee"
-      ]
-    }
+    [
+      "Specialty Coffee Association - Education",
+      "https://sca.coffee/education",
+      "SCA education is a global structured pathway for coffee skills and professional development."
+    ],
+    [
+      "Specialty Coffee Association - Coffee Skills Program",
+      "https://education.sca.coffee/coffee-skills-program",
+      "Industry education pathway that includes roasting, brewing, sensory, green coffee, and barista skills."
+    ],
+    [
+      "Specialty Coffee Association - Coffee Value Assessment",
+      "https://sca.coffee/value-assessment",
+      "Current SCA framework for evaluating coffee through physical, descriptive, affective, and extrinsic assessments."
+    ],
+    [
+      "Specialty Coffee Association - Coffee Taster's Flavor Wheel",
+      "https://sca.coffee/research/coffee-tasters-flavor-wheel",
+      "Industry sensory vocabulary resource developed with World Coffee Research."
+    ],
+    [
+      "World Coffee Research Sensory Lexicon",
+      "https://worldcoffeeresearch.org/resources/sensory-lexicon",
+      "Structured sensory vocabulary and calibration reference for coffee aroma and flavor."
+    ],
+    [
+      "Coffee Quality Institute",
+      "https://www.coffeeinstitute.org/",
+      "Coffee quality organization and reference point for quality evaluation and Q programs."
+    ],
+    [
+      "Coffee Board of India",
+      "https://coffeeboard.gov.in/",
+      "Official Indian coffee sector resource for origin, production, and local context."
+    ],
+    [
+      "Thermal Contaminants in Coffee Induced by Roasting: A Review",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10138461/",
+      "Open review discussing roasting-related chemical transformations including Maillard reaction, caramelization, and pyrolysis."
+    ]
   ]
 }
