@@ -57,7 +57,7 @@
     }
 
     nav a,
-    .door,
+    .index-word,
     .inside a {
       min-height: 44px;
       display: inline-flex;
@@ -66,7 +66,7 @@
     }
 
     nav a:hover,
-    .door:hover,
+    .index-word:hover,
     .inside a:hover {
       text-decoration: underline;
       text-underline-offset: 8px;
@@ -115,19 +115,29 @@
       letter-spacing: 0.04em;
     }
 
-    .doors {
+    .index-line {
       display: flex;
       flex-wrap: wrap;
       gap: 14px 38px;
       margin-top: 56px;
     }
 
-    .door {
+    .index-word {
       color: #1d1d19;
       font-size: 13px;
       font-weight: 500;
       letter-spacing: 0.16em;
       text-transform: uppercase;
+    }
+
+    .object-note {
+      max-width: 380px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      font-weight: 300;
+      letter-spacing: 0.035em;
+      line-height: 1.7;
     }
 
     .mark {
@@ -162,28 +172,8 @@
       border-radius: 50%;
     }
 
-    .pause {
-      min-height: 54vh;
-      display: grid;
-      place-items: center;
-      padding: clamp(78px, 12vw, 180px) var(--gutter);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .pause p {
-      max-width: 760px;
-      margin: 0;
-      font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
-      font-size: clamp(38px, 5vw, 74px);
-      font-weight: 300;
-      letter-spacing: -0.04em;
-      line-height: 1.02;
-      text-align: center;
-    }
-
     .walk {
-      padding: clamp(96px, 14vw, 230px) var(--gutter);
+      padding: clamp(64px, 10vw, 160px) var(--gutter) clamp(96px, 14vw, 230px);
     }
 
     .panel {
@@ -224,14 +214,6 @@
       margin-bottom: 20px;
       font-size: clamp(58px, 8vw, 118px);
       line-height: 0.86;
-    }
-
-    .caption p {
-      margin-bottom: 28px;
-      color: var(--muted);
-      font-size: 19px;
-      font-weight: 300;
-      letter-spacing: 0.035em;
     }
 
     .inside {
@@ -315,10 +297,6 @@
         font-size: clamp(70px, 20vw, 102px);
       }
 
-      .pause p {
-        text-align: left;
-      }
-
       .panel {
         min-height: auto;
       }
@@ -341,7 +319,7 @@
   <header class="header">
     <a class="brand" href="index-silent-sample.html" aria-label="KoffyKraft sample home">KoffyKraft</a>
     <nav aria-label="Quiet sample navigation">
-      <a href="#inside">Inside</a>
+      <a href="#inside">Index</a>
     </nav>
   </header>
 
@@ -351,35 +329,33 @@
         <p class="place">Karavaloor</p>
         <h1 id="sample-title">Stillness first.</h1>
         <p class="line">leaf / fire / water / cup</p>
-        <div class="doors">
-          <a class="door" href="#walk">enter slowly</a>
-          <a class="door" href="#inside">the work inside</a>
+        <div class="index-line" aria-label="KoffyKraft index">
+          <a class="index-word" href="#walk">objects</a>
+          <a class="index-word" href="#inside">index</a>
         </div>
       </div>
       <div class="mark" aria-hidden="true"></div>
     </section>
 
-    <section class="pause" aria-label="Quiet note">
-      <p>If it fits, stay a while.</p>
-    </section>
-
     <section id="walk" class="walk">
       <article class="panel narrow">
         <figure>
-          <img src="assets/site/citane-dried-leaves.jpg" alt="Dried leaves observed closely">
+          <img src="assets/site/citane-dried-leaves.jpg" alt="Processed coffee leaves for Citane">
         </figure>
         <div class="caption">
-          <p class="place">Leaf</p>
-          <h2>Before the cup.</h2>
-          <a class="door" href="buna/">enter Buna</a>
+          <p class="place">Object 01</p>
+          <h2>Processed coffee leaves.</h2>
+          <p class="object-note">Coffee leaves after selection and drying. The material before infusion.</p>
+          <a class="index-word" href="buna/">Buna</a>
         </div>
       </article>
 
       <article class="panel reverse">
         <div class="caption">
-          <p class="place">Fire</p>
-          <h2>Small batches.</h2>
-          <a class="door" href="learn/">enter learning</a>
+          <p class="place">Object 02</p>
+          <h2>Roaster detail.</h2>
+          <p class="object-note">A working machine. Heat, smell, timing, and small batches.</p>
+          <a class="index-word" href="learn/">Learning</a>
         </div>
         <figure>
           <img src="assets/site/home-roaster-detail.jpg" alt="A quiet detail of the KoffyKraft coffee roaster">
@@ -388,20 +364,21 @@
 
       <article class="panel narrow">
         <figure>
-          <img src="assets/site/citane-amber-cup.jpg" alt="Amber infusion in a clear glass">
+          <img src="assets/site/citane-amber-cup.jpg" alt="Citane brew in a clear glass">
         </figure>
         <div class="caption">
-          <p class="place">Water</p>
-          <h2>Slow extraction.</h2>
-          <a class="door" href="citane/">enter Citane</a>
+          <p class="place">Object 03</p>
+          <h2>Citane brew.</h2>
+          <p class="object-note">A coffee-leaf infusion. Amber, light, and quiet on the palate.</p>
+          <a class="index-word" href="citane/">Citane</a>
         </div>
       </article>
     </section>
 
     <section id="inside" class="inside">
       <div>
-        <p class="place">Inside</p>
-        <h2>Coffee, finally.</h2>
+        <p class="place">Index</p>
+        <h2>Coffee.</h2>
         <div class="inside-grid" aria-label="Explore inside KoffyKraft">
           <a href="training/brewing/">Brewing</a>
           <a href="training/cupping/">Cupping</a>
