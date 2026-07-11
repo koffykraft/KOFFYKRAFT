@@ -4,14 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cupping | KoffyKraft</title>
-  <meta name="description" content="KoffyKraft cupping room: a quiet self-study path for tasting coffee.">
+  <meta name="description" content="KoffyKraft cupping course index.">
   <style>
     :root {
-      --ink: #171513;
-      --muted: #77726a;
-      --line: #efede8;
+      --ink: #2b261f;
+      --muted: #8a8378;
+      --line: #eeeae2;
       --paper: #fff;
-      --soft: #fbfaf7;
       --gutter: clamp(24px, 6vw, 92px);
     }
 
@@ -23,43 +22,39 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: "Segoe UI", Arial, sans-serif;
-      line-height: 1.55;
+      font-family: "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
     }
 
     a { color: inherit; }
 
     .top {
-      min-height: 88px;
+      min-height: 90px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 28px;
-      padding: 24px var(--gutter);
-      border-bottom: 1px solid var(--line);
+      padding: 28px var(--gutter);
     }
 
     .brand {
-      color: inherit;
-      font-size: clamp(28px, 3vw, 42px);
+      font-size: clamp(30px, 3vw, 44px);
       font-weight: 300;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.03em;
       text-decoration: none;
     }
 
     .top nav {
       display: flex;
-      gap: 22px;
+      gap: 24px;
       flex-wrap: wrap;
       justify-content: flex-end;
-      font-size: 14px;
     }
 
-    .top nav a {
-      min-height: 40px;
-      display: inline-flex;
-      align-items: center;
-      color: #34312d;
+    .top nav a,
+    .lessons a,
+    .foot a {
+      color: inherit;
+      font-size: 15px;
       text-decoration: none;
     }
 
@@ -71,153 +66,82 @@
       padding: 0 var(--gutter);
     }
 
-    .hero {
-      min-height: calc(100vh - 88px);
+    .room {
+      min-height: calc(100vh - 90px);
       display: grid;
-      grid-template-columns: minmax(0, 0.38fr) minmax(280px, 0.5fr);
-      gap: clamp(44px, 9vw, 140px);
-      align-items: center;
-      padding: clamp(64px, 11vw, 148px) 0;
+      grid-template-rows: 1fr auto;
+      padding: clamp(52px, 8vw, 112px) 0 clamp(68px, 10vw, 140px);
     }
 
-    .title-block {
-      display: grid;
-      gap: 26px;
-      align-content: center;
+    .mark {
+      align-self: center;
+      justify-self: center;
+      width: min(360px, 58vw);
+      margin: 0;
+      opacity: 0.68;
+    }
+
+    .mark img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     h1 {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(42px, 7vw, 94px);
-      font-weight: 400;
-      letter-spacing: -0.035em;
-      line-height: 1;
+      justify-self: center;
+      margin: clamp(22px, 4vw, 44px) 0 0;
+      font-size: clamp(20px, 2.2vw, 28px);
+      font-weight: 300;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
     }
 
-    .note {
-      max-width: 25em;
-      margin: 0;
-      color: var(--muted);
-      font-size: clamp(17px, 1.5vw, 21px);
-      line-height: 1.72;
-    }
-
-    .cup-table {
-      min-height: clamp(360px, 56vh, 640px);
-      display: grid;
-      place-items: center;
-      background: var(--soft);
-      border: 1px solid var(--line);
-    }
-
-    .cup {
-      position: relative;
-      width: min(330px, 68vw);
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background:
-        radial-gradient(circle at 50% 50%, #4a3328 0 29%, #fff 30% 56%, #e8e3da 57% 58%, #fff 59% 100%);
-      box-shadow: 0 22px 70px rgba(0, 0, 0, 0.08);
-    }
-
-    .cup::before,
-    .cup::after {
-      content: "";
-      position: absolute;
-      top: 47%;
-      width: 52%;
-      height: 3px;
-      background: #c9c4bb;
-      transform-origin: center;
-    }
-
-    .cup::before {
-      left: -42%;
-      transform: rotate(-18deg);
-    }
-
-    .cup::after {
-      right: -42%;
-      transform: rotate(18deg);
-    }
-
-    .section {
-      padding: clamp(72px, 12vw, 160px) 0;
+    .lessons {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: clamp(74px, 12vw, 170px) 0 clamp(88px, 14vw, 190px);
       border-top: 1px solid var(--line);
     }
 
-    .section-title {
-      margin: 0 0 38px;
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    .lesson-list {
-      max-width: 980px;
-      border-top: 1px solid var(--line);
-    }
-
-    .lesson-list a {
+    .lessons a {
       display: grid;
-      grid-template-columns: 92px minmax(0, 1fr);
+      grid-template-columns: 64px minmax(0, 1fr);
       gap: 24px;
+      min-height: 66px;
       align-items: center;
-      min-height: 74px;
-      padding: 18px 0;
       border-bottom: 1px solid var(--line);
-      color: inherit;
-      text-decoration: none;
     }
 
-    .lesson-list span {
+    .lessons span {
       color: var(--muted);
       font-size: 13px;
     }
 
-    .lesson-list strong {
-      font-size: clamp(18px, 2vw, 24px);
-      font-weight: 400;
-      line-height: 1.25;
-    }
-
     .foot {
-      min-height: 116px;
+      min-height: 100px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      gap: 28px;
+      gap: 24px;
       padding: 34px var(--gutter);
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 14px;
     }
 
-    .foot a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    @media (max-width: 820px) {
+    @media (max-width: 700px) {
       .top,
       .foot {
         align-items: flex-start;
         flex-direction: column;
       }
 
-      .hero {
-        min-height: auto;
-        grid-template-columns: 1fr;
+      h1 {
+        letter-spacing: 0.24em;
       }
 
-      .cup-table {
-        min-height: 330px;
-      }
-
-      .lesson-list a {
+      .lessons a {
         grid-template-columns: 1fr;
-        gap: 6px;
+        gap: 4px;
+        padding: 16px 0;
       }
     }
   </style>
@@ -234,30 +158,31 @@
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="cupping-title">
-      <div class="title-block">
-        <h1 id="cupping-title">Cupping</h1>
-        <p class="note">Coffee tasted side by side. A slower way to notice aroma, sweetness, acidity, body, and finish.</p>
-      </div>
-      <figure class="cup-table" aria-label="White cupping bowl on a tasting table">
-        <div class="cup" role="img" aria-label="White cup with coffee and two cupping spoons"></div>
-      </figure>
+    <section class="room" aria-labelledby="cupping-title">
+      <figure class="mark"><img src="../../assets/site/cupping-mark.svg" alt="Cupping"></figure>
+      <h1 id="cupping-title">Cupping</h1>
     </section>
 
-    <section class="section" aria-labelledby="path-title">
-      <h2 id="path-title" class="section-title">Lessons</h2>
-      <nav class="lesson-list" aria-label="Cupping lessons">
-        <a href="guides/before-the-first-cupping.html"><span>Start</span><strong>Before the first cupping</strong></a>
-        <a href="lessons/lesson-1-1-aroma-mastery.html"><span>01</span><strong>Aroma</strong></a>
-        <a href="lessons/lesson-1-2-sweetness-sensitivity.html"><span>02</span><strong>Sweetness</strong></a>
-        <a href="lessons/lesson-1-3-acidity-awareness.html"><span>03</span><strong>Acidity</strong></a>
-        <a href="lessons/lesson-1-4-body-and-texture.html"><span>04</span><strong>Body and texture</strong></a>
-        <a href="lessons/lesson-1-5-aftertaste-and-clean-cup.html"><span>05</span><strong>Aftertaste and clean cup</strong></a>
-        <a href="lessons/lesson-2-4-consistency-and-comparative-cupping.html"><span>06</span><strong>Comparison</strong></a>
-        <a href="lessons/lesson-3-3-using-a-cupping-form-effectively.html"><span>07</span><strong>Cupping form</strong></a>
-        <a href="lessons/lesson-3-8-exploratory-cupping-and-curiosity-sessions.html"><span>08</span><strong>Curiosity sessions</strong></a>
-      </nav>
-    </section>
+    <nav class="lessons" aria-label="Cupping lessons">
+      <a href="guides/before-the-first-cupping.html"><span>Start</span>Before the first cupping</a>
+      <a href="lessons/lesson-1-1-aroma-mastery.html"><span>01</span>Aroma</a>
+      <a href="lessons/lesson-1-2-sweetness-sensitivity.html"><span>02</span>Sweetness</a>
+      <a href="lessons/lesson-1-3-acidity-awareness.html"><span>03</span>Acidity</a>
+      <a href="lessons/lesson-1-4-body-and-texture.html"><span>04</span>Body and texture</a>
+      <a href="lessons/lesson-1-5-aftertaste-and-clean-cup.html"><span>05</span>Aftertaste, clean cup</a>
+      <a href="lessons/lesson-2-1-dry-to-wet-aroma-journey.html"><span>06</span>Dry to wet aroma</a>
+      <a href="lessons/lesson-2-2-flavor-balance-practice.html"><span>07</span>Balance</a>
+      <a href="lessons/lesson-2-3-defects-101.html"><span>08</span>Defects</a>
+      <a href="lessons/lesson-2-4-consistency-and-comparative-cupping.html"><span>09</span>Comparison</a>
+      <a href="lessons/lesson-2-5-building-a-cupping-routine.html"><span>10</span>Routine</a>
+      <a href="lessons/lesson-3-1-cupping-in-real-life-conditions.html"><span>11</span>Real conditions</a>
+      <a href="lessons/lesson-3-2-gentle-flavor-calibration-and-familiar-taste-mapping.html"><span>12</span>Calibration</a>
+      <a href="lessons/lesson-3-3-using-a-cupping-form-effectively.html"><span>13</span>Form</a>
+      <a href="lessons/lesson-3-4-roast-evaluation-and-quality-scoring.html"><span>14</span>Roast evaluation</a>
+      <a href="lessons/lesson-3-6-building-a-personal-flavor-library.html"><span>15</span>Flavor library</a>
+      <a href="lessons/lesson-3-7-cupping-for-troubleshooting.html"><span>16</span>Troubleshooting</a>
+      <a href="lessons/lesson-3-8-exploratory-cupping-and-curiosity-sessions.html"><span>17</span>Curiosity</a>
+    </nav>
   </main>
 
   <footer class="foot">
