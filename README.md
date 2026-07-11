@@ -20,3 +20,4 @@ Here are some ideas to get you started:
 - [Coffee Roasting Foundations](training/roasting/index.html)
 - [Coffee Brewing Foundations](training/brewing/index.html)
 - [Coffee Cupping and Sensory Foundations](training/cupping/index.html)
+- [Living Root Network Natural Farming Handbook](training/lrn/index.html)

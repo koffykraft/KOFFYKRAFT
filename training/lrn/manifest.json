@@ -1,0 +1,152 @@
+{
+  "course": "Living Root Network Handbook",
+  "slug": "lrn",
+  "lessons": [
+    {
+      "title": "What Is the Living Root Network?",
+      "url": "lessons/lesson-1-what-is-living-root-network.html",
+      "time": "35 min",
+      "source": "Origin document, Farmer Handbook, Practical LRN Practices"
+    },
+    {
+      "title": "Plant Nutrition for Beginners",
+      "url": "lessons/lesson-2-plant-nutrition-for-beginners.html",
+      "time": "45 min",
+      "source": "Farmer Handbook, Plant Nutrition Primer, Elements Plants Are Made Of"
+    },
+    {
+      "title": "Root Zones and the Rhizosphere",
+      "url": "lessons/lesson-3-root-zones-and-rhizosphere.html",
+      "time": "40 min",
+      "source": "Root Zones, LRN Root Zones, Apoplast and Symplast"
+    },
+    {
+      "title": "Microbes, Fungi, and the Underground Market",
+      "url": "lessons/lesson-4-microbes-fungi-and-the-underground-market.html",
+      "time": "50 min",
+      "source": "Microbes as Nutrient Partners, Root Exudates, Healthy Soil Guide"
+    },
+    {
+      "title": "Water, Heat, and Climate Resilience",
+      "url": "lessons/lesson-5-water-heat-and-climate-resilience.html",
+      "time": "45 min",
+      "source": "Natural Conservation of Rainwater, Kerala Field Handbook, Practical LRN Practices"
+    },
+    {
+      "title": "Home Garden LRN Starter",
+      "url": "lessons/lesson-6-home-garden-lrn.html",
+      "time": "35 min",
+      "source": "Home Garden LRN Starter Guide"
+    },
+    {
+      "title": "Field and Estate Implementation",
+      "url": "lessons/lesson-7-field-and-estate-implementation.html",
+      "time": "60 min",
+      "source": "Kerala NF Field Handbook, Master Protocol, LRN Protocols"
+    },
+    {
+      "title": "Crop Protocols and Adaptation",
+      "url": "lessons/lesson-8-crop-protocols.html",
+      "time": "55 min",
+      "source": "LRN crop protocols, Bitter Gourd Protocol, Snake Gourd Cultivation"
+    },
+    {
+      "title": "Diagnosis and Field Records",
+      "url": "lessons/lesson-9-diagnosis-and-field-records.html",
+      "time": "45 min",
+      "source": "What Blocks Nutrient Uptake, What is EC, Soil Report, Healthy Soil Guide"
+    },
+    {
+      "title": "Building Your Own LRN System",
+      "url": "lessons/lesson-10-building-your-own-lrn-system.html",
+      "time": "60 min",
+      "source": "Complete Primer, Practical Practices, Field Handbooks"
+    }
+  ],
+  "references": [
+    {
+      "title": "USDA NRCS Soil Health",
+      "url": "https://www.nrcs.usda.gov/conservation-basics/soil/soil-health",
+      "note": "Soil health principles, rhizosphere activity, living roots, and practical conservation framing."
+    },
+    {
+      "title": "USDA NRCS Soil Health Starter Kit",
+      "url": "https://www.nrcs.usda.gov/sites/default/files/2022-10/Soil-Health-Starter-Kit-reduced.pdf",
+      "note": "Four practical principles: diversity, less disturbance, living roots, and soil cover."
+    },
+    {
+      "title": "SARE: Building Soils for Better Crops",
+      "url": "https://www.sare.org/resources/building-soils-for-better-crops/",
+      "note": "Ecological soil management guide covering organic matter, cover crops, rotations, soil biology, and water."
+    },
+    {
+      "title": "SARE: 10 Ways Cover Crops Enhance Soil Health",
+      "url": "https://www.sare.org/publications/cover-crops-ecosystem-services/10-ways-cover-crops-enhance-soil-health/",
+      "note": "Cover crops, living roots, soil organisms, erosion control, and crop-system services."
+    },
+    {
+      "title": "FAO Agroecology Knowledge Hub",
+      "url": "https://www.fao.org/agroecology/overview/en/",
+      "note": "International framing for agroecology, biodiversity, climate adaptation, and farmer knowledge."
+    },
+    {
+      "title": "FAO Climate-Smart Agriculture Sourcebook",
+      "url": "https://www.fao.org/3/i3325e/i3325e.pdf",
+      "note": "Climate-smart agriculture principles, soil organic matter, water retention, and resilience."
+    },
+    {
+      "title": "National Mission on Natural Farming: Concept",
+      "url": "https://naturalfarming.dac.gov.in/NaturalFarming/Concept",
+      "note": "Indian natural farming framing: ecology, recycling, on-farm resources, biodiversity, crops, trees, and livestock."
+    },
+    {
+      "title": "NITI Aayog: Natural Farming Training Toolkit and Best Practices Guide",
+      "url": "https://niti.gov.in/sites/default/files/2026-03/Training-Manual-English.pdf",
+      "note": "Government training manual for farmers and extension officers."
+    },
+    {
+      "title": "Andhra Pradesh Community Managed Natural Farming",
+      "url": "https://apcnf.in/",
+      "note": "Large-scale community managed agroecology and natural farming programme in India."
+    },
+    {
+      "title": "USDA ARS: Root Exudates Drive Soil-Microbe-Nutrient Feedbacks",
+      "url": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=373348",
+      "note": "Research summary on how root exudates shape microbial communities and nutrient availability."
+    },
+    {
+      "title": "Frontiers in Plant Science: Arbuscular Mycorrhizal Fungi and Phosphorus Uptake",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.831654/full",
+      "note": "Open research on mycorrhizal contribution to phosphorus acquisition in low-phosphorus environments."
+    }
+  ],
+  "local_sources": [
+    "The Origin of the Living Root Network (LRN) System.docx",
+    "Download Farmer_Handbook_LRN_Complete_Primer.docx",
+    "Download Farmer_Handbook_LRN_Plant_Nutrition_Primer.docx",
+    "Download LRN_Info_Sheet_1_Plant_Nutrition_Basics copy.docx",
+    "Download LRN Info Sheet 2_ Elements Plants Are Made Of 1.docx",
+    "Root Zones and Functions_LRN Info Sheet copy.docx",
+    "LRN_Root_Zones.docx",
+    "Microbes as Nutrient Partners.docx",
+    "Root Exudates.docx",
+    "Feeding vs Facilitating.docx",
+    "Healthy_Soil_Guide.docx",
+    "Home_Garden_LRN_Starter_Guide.docx",
+    "Practical LRN Practices.docx",
+    "LRN_Protocol_Fast_Growing_Vegetables.docx",
+    "LRN_Protocol_Tree_Perennial_and_Vegetable_Crops.docx",
+    "LRN_Protocol_Crop_Specific_Branches.docx",
+    "Bitter_Gourd_LRN_Protocol.docx",
+    "Snake Gourd Cultivation.docx",
+    "Kerala_NF_Field_Handbook.docx",
+    "Kerala_NF_Master_Protocol_Draft.docx",
+    "Natural Farming Protocols for Kerala.docx",
+    "Natural_Farming_for_Kerala_Commercial_Crops.docx",
+    "Natural_Conservation_of_Rainwater.docx",
+    "Soil Report_Karavaloor Region.docx",
+    "AndhraPradeshCommunityManagedNaturalFarming.pdf",
+    "Natural Farming Practices NITI Ayog.pdf",
+    "502-Soil-Fertility-and-Nutrient-Management-SSR.pdf"
+  ]
+}
