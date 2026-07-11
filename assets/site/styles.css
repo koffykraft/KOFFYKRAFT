@@ -14,6 +14,21 @@ body {
   line-height: 1.62;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(116, 96, 66, 0.045), transparent 18%),
+    radial-gradient(circle at 86% 36%, rgba(122, 132, 88, 0.05), transparent 22%),
+    linear-gradient(90deg, rgba(80, 58, 34, 0.018) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(80, 58, 34, 0.014) 1px, transparent 1px);
+  background-size: auto, auto, 34px 34px, 34px 34px;
+  mix-blend-mode: multiply;
+}
+
 a {
   color: inherit;
 }
@@ -30,6 +45,7 @@ a {
   background: rgba(251, 247, 239, 0.96);
   border-bottom: 1px solid #e3d8c7;
   backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .brand {
@@ -100,14 +116,15 @@ nav a:hover,
 
 .roastery-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(330px, 0.72fr);
-  gap: 46px;
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.86fr);
+  gap: clamp(42px, 6vw, 88px);
   align-items: end;
-  min-height: calc(88vh - 76px);
-  padding: 70px clamp(22px, 6vw, 88px) 54px;
+  min-height: calc(92vh - 76px);
+  padding: 92px clamp(22px, 6vw, 88px) 64px;
   background:
-    radial-gradient(circle at 82% 24%, rgba(222, 233, 205, 0.86), transparent 36%),
-    linear-gradient(112deg, #fbf7ef 0%, #fbf7ef 54%, #eef3df 100%);
+    radial-gradient(circle at 79% 20%, rgba(222, 233, 205, 0.82), transparent 34%),
+    radial-gradient(circle at 20% 78%, rgba(232, 212, 181, 0.24), transparent 24%),
+    linear-gradient(112deg, #fbf7ef 0%, #fbf7ef 50%, #eef3df 100%);
   border-bottom: 1px solid #e3d8c7;
 }
 
@@ -137,11 +154,11 @@ dt {
 }
 
 h1 {
-  max-width: 920px;
+  max-width: 880px;
   margin: 0 0 18px;
   color: #24211d;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(48px, 6.7vw, 94px);
+  font-size: clamp(48px, 6.4vw, 92px);
   font-weight: 520;
   letter-spacing: 0;
   line-height: 1;
@@ -191,26 +208,38 @@ p {
 .guide-card,
 .process-steps article,
 .quiet-strip > div {
-  border: 1px solid #dfd2bf;
+  border: 1px solid rgba(198, 180, 154, 0.72);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.96);
-  box-shadow: 0 16px 34px rgba(62, 48, 31, 0.07);
+  background:
+    linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(250, 244, 235, 0.94));
+  box-shadow: 0 22px 44px rgba(62, 48, 31, 0.08);
 }
 
 .hero-image,
 .image-card {
   margin: 0;
-  padding: 12px;
+  padding: 14px;
+}
+
+.hero-image {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
 }
 
 .hero-image img,
 .image-card img {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 520px;
-  object-fit: contain;
+  height: 100%;
+  max-height: 620px;
+  object-fit: cover;
   border-radius: 5px;
+}
+
+.image-card img {
+  height: auto;
+  object-fit: contain;
 }
 
 .quiet-strip {
@@ -225,7 +254,9 @@ p {
   border: 0;
   border-radius: 0;
   box-shadow: none;
-  padding: 24px clamp(22px, 4vw, 44px);
+  padding: 30px clamp(22px, 4vw, 52px);
+  background:
+    linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(250, 246, 238, 0.96));
 }
 
 .quiet-strip strong {
@@ -238,7 +269,7 @@ p {
 }
 
 .section {
-  padding: 74px clamp(22px, 6vw, 88px);
+  padding: 96px clamp(22px, 6vw, 88px);
   border-bottom: 1px solid #e3d8c7;
 }
 
@@ -251,21 +282,39 @@ p {
 .process-steps {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 26px;
+  gap: 22px;
+  margin-top: 34px;
 }
 
 .coffee-card,
 .guide-card,
 .process-steps article {
   display: block;
-  min-height: 250px;
-  padding: 24px;
+  min-height: 282px;
+  padding: 28px;
   color: #29251f;
 }
 
 .coffee-card.feature {
-  background: #fff8eb;
+  background:
+    linear-gradient(135deg, #fff7e7, #fffdf8);
+  transform: translateY(-14px);
+}
+
+.coffee-card,
+.guide-card {
+  position: relative;
+}
+
+.coffee-card::after,
+.guide-card::after,
+.process-steps article::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(196, 177, 146, 0.24);
+  border-radius: 5px;
+  pointer-events: none;
 }
 
 .tag,
@@ -309,9 +358,11 @@ dd {
 .process-section {
   display: grid;
   grid-template-columns: minmax(0, 0.75fr) minmax(0, 1fr);
-  gap: 44px;
+  gap: clamp(44px, 6vw, 84px);
   align-items: start;
-  background: #f4efe3;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(245, 233, 210, 0.78), transparent 24%),
+    linear-gradient(112deg, #f5efe4, #f1eadc);
 }
 
 .process-steps {
@@ -320,18 +371,21 @@ dd {
 }
 
 .guides-section {
-  background: #fffdf8;
+  background:
+    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 100%);
 }
 
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.75fr);
-  gap: 44px;
+  gap: clamp(44px, 6vw, 84px);
   align-items: center;
 }
 
 .soft-section {
-  background: linear-gradient(112deg, #fbf7ef 0%, #fbf7ef 54%, #edf3e3 100%);
+  background:
+    radial-gradient(circle at 78% 22%, rgba(217, 230, 196, 0.74), transparent 28%),
+    linear-gradient(112deg, #fbf7ef 0%, #fbf7ef 54%, #edf3e3 100%);
 }
 
 .site-footer {
@@ -339,7 +393,7 @@ dd {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 24px;
-  padding: 30px clamp(22px, 6vw, 88px);
+  padding: 42px clamp(22px, 6vw, 88px);
   background: #332d25;
   color: #fffaf1;
 }
@@ -371,10 +425,11 @@ dd {
 .card,
 .assistant-card,
 .wide-image {
-  border: 1px solid #dfd2bf;
+  border: 1px solid rgba(198, 180, 154, 0.72);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.96);
-  box-shadow: 0 16px 34px rgba(62, 48, 31, 0.07);
+  background:
+    linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(250, 244, 235, 0.94));
+  box-shadow: 0 22px 44px rgba(62, 48, 31, 0.08);
 }
 
 .panel,
@@ -475,6 +530,10 @@ th {
 }
 
 @media (max-width: 900px) {
+  body::before {
+    opacity: 0.42;
+  }
+
   .site-header {
     position: static;
     align-items: flex-start;
@@ -508,6 +567,7 @@ th {
   .roastery-hero {
     min-height: auto;
     padding-top: 46px;
+    padding-bottom: 42px;
   }
 
   h1 {
@@ -519,11 +579,18 @@ th {
   }
 
   .section {
-    padding-top: 52px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .hero-image img,
   .image-card img {
+    height: auto;
     max-height: none;
+    object-fit: contain;
+  }
+
+  .coffee-card.feature {
+    transform: none;
   }
 }
