@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KoffyKraft Room Overview</title>
-  <meta name="description" content="Visual overview of KoffyKraft rooms.">
+  <title>KoffyKraft Pages From Home</title>
+  <meta name="description" content="Visual overview of the pages that open from the current KoffyKraft home page.">
   <style>
     :root {
       --ink: #151515;
@@ -24,10 +24,8 @@
       letter-spacing: 0.02em;
     }
 
-    a { color: inherit; }
-
     header {
-      min-height: 120px;
+      min-height: 116px;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -43,18 +41,14 @@
       letter-spacing: -0.02em;
     }
 
-    .nav {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav a {
+    .top-link,
+    .open {
+      color: inherit;
       font-size: 12px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       text-decoration: none;
+      border-bottom: 1px solid var(--line);
     }
 
     main {
@@ -62,80 +56,29 @@
     }
 
     .note {
-      max-width: 680px;
+      max-width: 640px;
       margin: 0 0 48px;
       color: var(--muted);
       font-size: 15px;
       line-height: 1.6;
     }
 
-    .selection {
-      position: sticky;
-      top: 0;
-      z-index: 3;
-      display: grid;
-      gap: 10px;
-      margin: 0 0 42px;
-      padding: 18px;
-      background: rgba(255, 255, 255, 0.94);
-      border: 1px solid var(--line);
-      backdrop-filter: blur(12px);
-    }
-
-    .selection label {
-      color: var(--muted);
-      font-size: 12px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-    }
-
-    textarea {
-      width: 100%;
-      min-height: 76px;
-      resize: vertical;
-      border: 1px solid var(--line);
-      padding: 12px;
-      color: var(--ink);
-      background: var(--soft);
-      font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
-    }
-
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: clamp(22px, 3vw, 42px);
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: clamp(28px, 4vw, 56px);
     }
 
-    .card {
+    article {
       display: grid;
       gap: 14px;
-      padding: 0;
-      border: 0;
-      background: transparent;
-      color: inherit;
-      text-align: left;
-      cursor: pointer;
-    }
-
-    .card:focus-visible {
-      outline: 2px solid #111;
-      outline-offset: 8px;
     }
 
     .frame {
-      position: relative;
       height: 260px;
       overflow: hidden;
-      display: grid;
-      place-items: center;
       background: var(--soft);
-      border: 1px solid transparent;
-      transition: border-color 160ms ease, background 160ms ease;
-    }
-
-    .card[aria-pressed="true"] .frame {
-      border-color: #111;
-      background: #fff;
+      border: 1px solid var(--line);
     }
 
     iframe {
@@ -150,31 +93,21 @@
 
     .meta {
       display: grid;
-      gap: 6px;
+      gap: 7px;
     }
 
-    .name {
+    h2 {
+      margin: 0;
       font-size: 13px;
+      font-weight: 400;
       letter-spacing: 0.16em;
       text-transform: uppercase;
     }
 
-    .url,
-    .use {
+    .url {
       color: var(--muted);
       font-size: 13px;
-      line-height: 1.4;
       overflow-wrap: anywhere;
-    }
-
-    .open {
-      width: max-content;
-      color: var(--ink);
-      font-size: 12px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-bottom: 1px solid var(--line);
     }
 
     @media (max-width: 680px) {
@@ -203,57 +136,49 @@
 </head>
 <body>
   <header>
-    <h1>Room overview</h1>
-    <nav class="nav" aria-label="Catalog navigation">
-      <a href="image-catalog.html">images</a>
-      <a href="index-silent-sample.html">sample</a>
-    </nav>
+    <h1>Pages from home</h1>
+    <a class="top-link" href="index.html">home</a>
   </header>
 
   <main>
-    <p class="note">A small board of the rooms as they are now.</p>
+    <p class="note">Only the separate pages that open from the current index page are shown here. The Coffee and Estate links on the home page are section jumps, not separate pages.</p>
 
-    <div class="selection">
-      <label for="chosen">Selected</label>
-      <textarea id="chosen" readonly placeholder="Selected page links will appear here."></textarea>
-    </div>
+    <section class="grid" aria-label="Pages linked from the KoffyKraft home page">
+      <article>
+        <div class="frame"><iframe src="learn/" title="Learn page preview" loading="lazy"></iframe></div>
+        <div class="meta"><h2>Learn</h2><span class="url">learn/</span><a class="open" href="learn/">open</a></div>
+      </article>
 
-    <section class="grid" aria-label="Public pages">
-      <button class="card" type="button" data-url="index.html"><span class="frame"><iframe src="index.html" title="Home preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Home</span><span class="url">index.html</span><a class="open" href="index.html" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="index-silent-sample.html"><span class="frame"><iframe src="index-silent-sample.html" title="Silent sample preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Silent sample</span><span class="url">index-silent-sample.html</span><a class="open" href="index-silent-sample.html" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="learn/"><span class="frame"><iframe src="learn/" title="Coffee preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Coffee</span><span class="url">learn/</span><a class="open" href="learn/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="training/brewing/"><span class="frame"><iframe src="training/brewing/" title="Brewing preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Brewing</span><span class="url">training/brewing/</span><a class="open" href="training/brewing/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="training/cupping/"><span class="frame"><iframe src="training/cupping/" title="Cupping preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Cupping</span><span class="url">training/cupping/</span><a class="open" href="training/cupping/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="buna/"><span class="frame"><iframe src="buna/" title="Buna preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Buna</span><span class="url">buna/</span><a class="open" href="buna/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="citane/"><span class="frame"><iframe src="citane/" title="Citane preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Citane</span><span class="url">citane/</span><a class="open" href="citane/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="cold-brew/"><span class="frame"><iframe src="cold-brew/" title="Cold Brew preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Cold Brew</span><span class="url">cold-brew/</span><a class="open" href="cold-brew/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="training/lrn/"><span class="frame"><iframe src="training/lrn/" title="LRN preview" loading="lazy"></iframe></span><span class="meta"><span class="name">LRN</span><span class="url">training/lrn/</span><a class="open" href="training/lrn/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="image-catalog.html"><span class="frame"><iframe src="image-catalog.html" title="Image catalog preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Images</span><span class="url">image-catalog.html</span><a class="open" href="image-catalog.html" onclick="event.stopPropagation()">open</a></span></button>
+      <article>
+        <div class="frame"><iframe src="buna/" title="Buna page preview" loading="lazy"></iframe></div>
+        <div class="meta"><h2>Buna</h2><span class="url">buna/</span><a class="open" href="buna/">open</a></div>
+      </article>
+
+      <article>
+        <div class="frame"><iframe src="citane/" title="Citane page preview" loading="lazy"></iframe></div>
+        <div class="meta"><h2>Citane</h2><span class="url">citane/</span><a class="open" href="citane/">open</a></div>
+      </article>
+
+      <article>
+        <div class="frame"><iframe src="cold-brew/" title="Cold Brew page preview" loading="lazy"></iframe></div>
+        <div class="meta"><h2>Cold Brew</h2><span class="url">cold-brew/</span><a class="open" href="cold-brew/">open</a></div>
+      </article>
+
+      <article>
+        <div class="frame"><iframe src="training/brewing/" title="Brewing page preview" loading="lazy"></iframe></div>
+        <div class="meta"><h2>Brewing</h2><span class="url">training/brewing/</span><a class="open" href="training/brewing/">open</a></div>
+      </article>
+
+      <article>
+        <div class="frame"><iframe src="training/cupping/" title="Cupping page preview" loading="lazy"></iframe></div>
+        <div class="meta"><h2>Cupping</h2><span class="url">training/cupping/</span><a class="open" href="training/cupping/">open</a></div>
+      </article>
+
+      <article>
+        <div class="frame"><iframe src="training/lrn/" title="LRN page preview" loading="lazy"></iframe></div>
+        <div class="meta"><h2>LRN</h2><span class="url">training/lrn/</span><a class="open" href="training/lrn/">open</a></div>
+      </article>
     </section>
   </main>
-
-  <script>
-    const selected = new Set();
-    const output = document.querySelector("#chosen");
-
-    function renderSelection() {
-      output.value = Array.from(selected).join("\n");
-    }
-
-    document.querySelectorAll(".card").forEach((card) => {
-      card.setAttribute("aria-pressed", "false");
-      card.addEventListener("click", () => {
-        const url = card.dataset.url;
-        if (selected.has(url)) {
-          selected.delete(url);
-          card.setAttribute("aria-pressed", "false");
-        } else {
-          selected.add(url);
-          card.setAttribute("aria-pressed", "true");
-        }
-        renderSelection();
-      });
-    });
-  </script>
 </body>
 </html>
