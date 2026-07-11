@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KoffyKraft Image Catalog</title>
+  <meta name="description" content="Small image catalog for choosing KoffyKraft website photographs.">
+  <style>
+    :root {
+      --ink: #151515;
+      --muted: #777;
+      --line: #eceae6;
+      --paper: #fff;
+      --soft: #faf9f6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    a { color: inherit; }
+
+    header {
+      min-height: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 42px clamp(22px, 5vw, 76px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    main {
+      padding: clamp(28px, 5vw, 76px);
+    }
+
+    .note {
+      max-width: 620px;
+      margin: 0 0 48px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .selection {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: grid;
+      gap: 10px;
+      margin: 0 0 42px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .selection label {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 76px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      padding: 12px;
+      color: var(--ink);
+      background: var(--soft);
+      font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: clamp(22px, 3vw, 42px);
+    }
+
+    .card {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .card:focus-visible {
+      outline: 2px solid #111;
+      outline-offset: 8px;
+    }
+
+    .frame {
+      min-height: 214px;
+      display: grid;
+      place-items: center;
+      background: var(--soft);
+      border: 1px solid transparent;
+      transition: border-color 160ms ease, background 160ms ease;
+    }
+
+    .card[aria-pressed="true"] .frame {
+      border-color: #111;
+      background: #fff;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 214px;
+      object-fit: contain;
+    }
+
+    .meta {
+      display: grid;
+      gap: 6px;
+    }
+
+    .name {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .use {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 680px) {
+      header {
+        min-height: 96px;
+        padding: 28px 22px;
+      }
+
+      main {
+        padding: 28px 22px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Image catalog</h1>
+    <nav class="nav" aria-label="Catalog navigation">
+      <a href="link-catalog.html">links</a>
+      <a href="index-silent-sample.html">sample</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="note">Click any photograph to add it to the selection list. The list is only for choosing; it does not change the website until we place the selected images into pages.</p>
+
+    <div class="selection">
+      <label for="chosen">Selected</label>
+      <textarea id="chosen" readonly placeholder="Selected filenames will appear here."></textarea>
+    </div>
+
+    <section class="grid" aria-label="Available images">
+      <button class="card" type="button" data-file="buna-landscape.jpg" data-use="Buna, reference sheet, archive visual"><span class="frame"><img src="assets/catalog-thumbs/buna-landscape.jpg" alt="Buna landscape reference sheet"></span><span class="meta"><span class="name">buna-landscape.jpg</span><span class="use">Buna / archive</span></span></button>
+      <button class="card" type="button" data-file="buna-leaf.jpg" data-use="Buna mark, brand pause"><span class="frame"><img src="assets/catalog-thumbs/buna-leaf.jpg" alt="Buna leaf mark"></span><span class="meta"><span class="name">buna-leaf.jpg</span><span class="use">Buna / mark</span></span></button>
+      <button class="card" type="button" data-file="citane-amber-cup.jpg" data-use="Citane, brew, amber liquid"><span class="frame"><img src="assets/catalog-thumbs/citane-amber-cup.jpg" alt="Amber Citane brew in glass"></span><span class="meta"><span class="name">citane-amber-cup.jpg</span><span class="use">Citane / brew</span></span></button>
+      <button class="card" type="button" data-file="citane-dried-leaves.jpg" data-use="Citane, processed leaves"><span class="frame"><img src="assets/catalog-thumbs/citane-dried-leaves.jpg" alt="Dried coffee leaves"></span><span class="meta"><span class="name">citane-dried-leaves.jpg</span><span class="use">Citane / processed leaf</span></span></button>
+      <button class="card" type="button" data-file="citane-easy-drink.jpg" data-use="Citane, designed page, gentle product context"><span class="frame"><img src="assets/catalog-thumbs/citane-easy-drink.jpg" alt="Citane easy drink graphic"></span><span class="meta"><span class="name">citane-easy-drink.jpg</span><span class="use">Citane / designed note</span></span></button>
+      <button class="card" type="button" data-file="citane-leaf-pack.jpg" data-use="Citane, product pack, public page"><span class="frame"><img src="assets/catalog-thumbs/citane-leaf-pack.jpg" alt="Citane coffee leaf pack"></span><span class="meta"><span class="name">citane-leaf-pack.jpg</span><span class="use">Citane / pack</span></span></button>
+      <button class="card" type="button" data-file="coffee-label.jpg" data-use="Coffee, product, roastery identity"><span class="frame"><img src="assets/catalog-thumbs/coffee-label.jpg" alt="KoffyKraft coffee pack"></span><span class="meta"><span class="name">coffee-label.jpg</span><span class="use">Coffee / pack</span></span></button>
+      <button class="card" type="button" data-file="estate-ground.jpg" data-use="Estate, living root, field detail"><span class="frame"><img src="assets/catalog-thumbs/estate-ground.jpg" alt="Coffee plants at the estate"></span><span class="meta"><span class="name">estate-ground.jpg</span><span class="use">Estate / ground</span></span></button>
+      <button class="card" type="button" data-file="home-beans.jpg" data-use="Coffee, roasted beans, process"><span class="frame"><img src="assets/catalog-thumbs/home-beans.jpg" alt="Roasted coffee beans"></span><span class="meta"><span class="name">home-beans.jpg</span><span class="use">Coffee / beans</span></span></button>
+      <button class="card" type="button" data-file="home-estate-quiet.jpg" data-use="Estate, home, living landscape"><span class="frame"><img src="assets/catalog-thumbs/home-estate-quiet.jpg" alt="Quiet estate view"></span><span class="meta"><span class="name">home-estate-quiet.jpg</span><span class="use">Estate / landscape</span></span></button>
+      <button class="card" type="button" data-file="home-living-root.jpg" data-use="LRN, estate system, young plant"><span class="frame"><img src="assets/catalog-thumbs/home-living-root.jpg" alt="Young plant in living root system"></span><span class="meta"><span class="name">home-living-root.jpg</span><span class="use">LRN / plant</span></span></button>
+      <button class="card" type="button" data-file="home-roaster-detail.jpg" data-use="Coffee, roaster detail, craft"><span class="frame"><img src="assets/catalog-thumbs/home-roaster-detail.jpg" alt="Roaster detail"></span><span class="meta"><span class="name">home-roaster-detail.jpg</span><span class="use">Coffee / roaster detail</span></span></button>
+      <button class="card" type="button" data-file="kk-wordmark.png" data-use="Brand mark"><span class="frame"><img src="assets/catalog-thumbs/kk-wordmark.jpg" alt="KoffyKraft wordmark"></span><span class="meta"><span class="name">kk-wordmark.png</span><span class="use">Brand / wordmark</span></span></button>
+      <button class="card" type="button" data-file="roaster-real.jpg" data-use="Coffee, roaster, machine presence"><span class="frame"><img src="assets/catalog-thumbs/roaster-real.jpg" alt="Coffee roaster"></span><span class="meta"><span class="name">roaster-real.jpg</span><span class="use">Coffee / roaster</span></span></button>
+      <button class="card" type="button" data-file="sample-citane-cup.jpg" data-use="Citane, brew, desk note"><span class="frame"><img src="assets/catalog-thumbs/sample-citane-cup.jpg" alt="Citane brew on desk"></span><span class="meta"><span class="name">sample-citane-cup.jpg</span><span class="use">Citane / brew desk</span></span></button>
+      <button class="card" type="button" data-file="sample-fire.jpg" data-use="Coffee, roasting fire, contrast"><span class="frame"><img src="assets/catalog-thumbs/sample-fire.jpg" alt="Roasting fire"></span><span class="meta"><span class="name">sample-fire.jpg</span><span class="use">Coffee / fire</span></span></button>
+      <button class="card" type="button" data-file="sample-leaf-drying.jpg" data-use="Citane, drying leaf process"><span class="frame"><img src="assets/catalog-thumbs/sample-leaf-drying.jpg" alt="Leaves drying on mesh"></span><span class="meta"><span class="name">sample-leaf-drying.jpg</span><span class="use">Citane / drying</span></span></button>
+      <button class="card" type="button" data-file="sample-leaf-fresh.jpg" data-use="Buna, Citane, fresh leaf harvest"><span class="frame"><img src="assets/catalog-thumbs/sample-leaf-fresh.jpg" alt="Fresh coffee leaves in basket"></span><span class="meta"><span class="name">sample-leaf-fresh.jpg</span><span class="use">Buna + Citane / fresh leaf</span></span></button>
+      <button class="card" type="button" data-file="sample-leaf-processed.jpg" data-use="Citane, processed leaves, texture"><span class="frame"><img src="assets/catalog-thumbs/sample-leaf-processed.jpg" alt="Processed coffee leaves"></span><span class="meta"><span class="name">sample-leaf-processed.jpg</span><span class="use">Citane / texture</span></span></button>
+      <button class="card" type="button" data-file="sample-roaster-full.jpg" data-use="Coffee, roaster, opening image"><span class="frame"><img src="assets/catalog-thumbs/sample-roaster-full.jpg" alt="Full coffee roaster"></span><span class="meta"><span class="name">sample-roaster-full.jpg</span><span class="use">Coffee / roaster full</span></span></button>
+    </section>
+  </main>
+
+  <script>
+    const selected = new Set();
+    const output = document.querySelector("#chosen");
+
+    function renderSelection() {
+      output.value = Array.from(selected).join("\n");
+    }
+
+    document.querySelectorAll(".card").forEach((card) => {
+      card.setAttribute("aria-pressed", "false");
+      card.addEventListener("click", () => {
+        const file = card.dataset.file;
+        if (selected.has(file)) {
+          selected.delete(file);
+          card.setAttribute("aria-pressed", "false");
+        } else {
+          selected.add(file);
+          card.setAttribute("aria-pressed", "true");
+        }
+        renderSelection();
+      });
+    });
+  </script>
+</body>
+</html>

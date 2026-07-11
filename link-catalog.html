@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KoffyKraft Link Catalog</title>
+  <meta name="description" content="Small overview catalog of KoffyKraft public pages.">
+  <style>
+    :root {
+      --ink: #151515;
+      --muted: #777;
+      --line: #eceae6;
+      --paper: #fff;
+      --soft: #faf9f6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    a { color: inherit; }
+
+    header {
+      min-height: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 42px clamp(22px, 5vw, 76px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    main {
+      padding: clamp(28px, 5vw, 76px);
+    }
+
+    .note {
+      max-width: 680px;
+      margin: 0 0 48px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .selection {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: grid;
+      gap: 10px;
+      margin: 0 0 42px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .selection label {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 76px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      padding: 12px;
+      color: var(--ink);
+      background: var(--soft);
+      font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: clamp(22px, 3vw, 42px);
+    }
+
+    .card {
+      display: grid;
+      gap: 14px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .card:focus-visible {
+      outline: 2px solid #111;
+      outline-offset: 8px;
+    }
+
+    .frame {
+      min-height: 220px;
+      display: grid;
+      place-items: center;
+      background: var(--soft);
+      border: 1px solid transparent;
+      transition: border-color 160ms ease, background 160ms ease;
+    }
+
+    .card[aria-pressed="true"] .frame {
+      border-color: #111;
+      background: #fff;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+    }
+
+    .meta {
+      display: grid;
+      gap: 6px;
+    }
+
+    .name {
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .url,
+    .use {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+
+    .open {
+      width: max-content;
+      color: var(--ink);
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+    }
+
+    @media (max-width: 680px) {
+      header {
+        min-height: 96px;
+        padding: 28px 22px;
+      }
+
+      main {
+        padding: 28px 22px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Link catalog</h1>
+    <nav class="nav" aria-label="Catalog navigation">
+      <a href="image-catalog.html">images</a>
+      <a href="index-silent-sample.html">sample</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="note">Click any page card to add its URL to the selection list. Use this to mark which rooms need photographs, rewriting, or redesign next.</p>
+
+    <div class="selection">
+      <label for="chosen">Selected</label>
+      <textarea id="chosen" readonly placeholder="Selected page links will appear here."></textarea>
+    </div>
+
+    <section class="grid" aria-label="Public pages">
+      <button class="card" type="button" data-url="index.html"><span class="frame"><img src="assets/catalog-thumbs/sample-roaster-full.jpg" alt="KoffyKraft home preview"></span><span class="meta"><span class="name">Home</span><span class="url">index.html</span><span class="use">Current public front page.</span><a class="open" href="index.html" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="index-silent-sample.html"><span class="frame"><img src="assets/catalog-thumbs/home-estate-quiet.jpg" alt="Silent sample preview"></span><span class="meta"><span class="name">Silent sample</span><span class="url">index-silent-sample.html</span><span class="use">Experimental quiet home direction.</span><a class="open" href="index-silent-sample.html" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="learn/"><span class="frame"><img src="assets/catalog-thumbs/home-beans.jpg" alt="Coffee page preview"></span><span class="meta"><span class="name">Coffee</span><span class="url">learn/</span><span class="use">Roastery, coffee, guides entry.</span><a class="open" href="learn/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="training/brewing/"><span class="frame"><img src="assets/catalog-thumbs/citane-amber-cup.jpg" alt="Brewing page preview"></span><span class="meta"><span class="name">Brewing</span><span class="url">training/brewing/</span><span class="use">Public self-study course.</span><a class="open" href="training/brewing/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="training/cupping/"><span class="frame"><img src="assets/catalog-thumbs/coffee-label.jpg" alt="Cupping page preview"></span><span class="meta"><span class="name">Cupping</span><span class="url">training/cupping/</span><span class="use">Public self-study course.</span><a class="open" href="training/cupping/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="buna/"><span class="frame"><img src="assets/catalog-thumbs/buna-landscape.jpg" alt="Buna page preview"></span><span class="meta"><span class="name">Buna</span><span class="url">buna/</span><span class="use">Coffee leaf project.</span><a class="open" href="buna/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="citane/"><span class="frame"><img src="assets/catalog-thumbs/citane-leaf-pack.jpg" alt="Citane page preview"></span><span class="meta"><span class="name">Citane</span><span class="url">citane/</span><span class="use">Coffee leaf beverage page.</span><a class="open" href="citane/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="cold-brew/"><span class="frame"><img src="assets/catalog-thumbs/sample-citane-cup.jpg" alt="Cold brew page preview"></span><span class="meta"><span class="name">Cold Brew</span><span class="url">cold-brew/</span><span class="use">VITO cold brew section.</span><a class="open" href="cold-brew/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="training/lrn/"><span class="frame"><img src="assets/catalog-thumbs/home-living-root.jpg" alt="LRN page preview"></span><span class="meta"><span class="name">LRN</span><span class="url">training/lrn/</span><span class="use">Living Root Network handbook.</span><a class="open" href="training/lrn/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="image-catalog.html"><span class="frame"><img src="assets/catalog-thumbs/kk-wordmark.jpg" alt="Image catalog preview"></span><span class="meta"><span class="name">Images</span><span class="url">image-catalog.html</span><span class="use">Photograph selection board.</span><a class="open" href="image-catalog.html" onclick="event.stopPropagation()">open</a></span></button>
+    </section>
+  </main>
+
+  <script>
+    const selected = new Set();
+    const output = document.querySelector("#chosen");
+
+    function renderSelection() {
+      output.value = Array.from(selected).join("\n");
+    }
+
+    document.querySelectorAll(".card").forEach((card) => {
+      card.setAttribute("aria-pressed", "false");
+      card.addEventListener("click", () => {
+        const url = card.dataset.url;
+        if (selected.has(url)) {
+          selected.delete(url);
+          card.setAttribute("aria-pressed", "false");
+        } else {
+          selected.add(url);
+          card.setAttribute("aria-pressed", "true");
+        }
+        renderSelection();
+      });
+    });
+  </script>
+</body>
+</html>
