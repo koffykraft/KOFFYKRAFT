@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KoffyKraft Link Catalog</title>
-  <meta name="description" content="Small overview catalog of KoffyKraft public pages.">
+  <title>KoffyKraft Room Overview</title>
+  <meta name="description" content="Visual overview of KoffyKraft rooms.">
   <style>
     :root {
       --ink: #151515;
@@ -102,7 +102,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       gap: clamp(22px, 3vw, 42px);
     }
 
@@ -123,7 +123,9 @@
     }
 
     .frame {
-      min-height: 220px;
+      position: relative;
+      height: 260px;
+      overflow: hidden;
       display: grid;
       place-items: center;
       background: var(--soft);
@@ -136,11 +138,14 @@
       background: #fff;
     }
 
-    img {
-      display: block;
-      max-width: 100%;
-      max-height: 220px;
-      object-fit: contain;
+    iframe {
+      width: 1440px;
+      height: 1000px;
+      border: 0;
+      transform: scale(0.23);
+      transform-origin: 0 0;
+      pointer-events: none;
+      background: #fff;
     }
 
     .meta {
@@ -181,12 +186,24 @@
       main {
         padding: 28px 22px 60px;
       }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .frame {
+        height: 220px;
+      }
+
+      iframe {
+        transform: scale(0.18);
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Link catalog</h1>
+    <h1>Room overview</h1>
     <nav class="nav" aria-label="Catalog navigation">
       <a href="image-catalog.html">images</a>
       <a href="index-silent-sample.html">sample</a>
@@ -194,7 +211,7 @@
   </header>
 
   <main>
-    <p class="note">Click any page card to add its URL to the selection list. Use this to mark which rooms need photographs, rewriting, or redesign next.</p>
+    <p class="note">A small board of the rooms as they are now.</p>
 
     <div class="selection">
       <label for="chosen">Selected</label>
@@ -202,16 +219,16 @@
     </div>
 
     <section class="grid" aria-label="Public pages">
-      <button class="card" type="button" data-url="index.html"><span class="frame"><img src="assets/catalog-thumbs/sample-roaster-full.jpg" alt="KoffyKraft home preview"></span><span class="meta"><span class="name">Home</span><span class="url">index.html</span><span class="use">Current public front page.</span><a class="open" href="index.html" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="index-silent-sample.html"><span class="frame"><img src="assets/catalog-thumbs/home-estate-quiet.jpg" alt="Silent sample preview"></span><span class="meta"><span class="name">Silent sample</span><span class="url">index-silent-sample.html</span><span class="use">Experimental quiet home direction.</span><a class="open" href="index-silent-sample.html" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="learn/"><span class="frame"><img src="assets/catalog-thumbs/home-beans.jpg" alt="Coffee page preview"></span><span class="meta"><span class="name">Coffee</span><span class="url">learn/</span><span class="use">Roastery, coffee, guides entry.</span><a class="open" href="learn/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="training/brewing/"><span class="frame"><img src="assets/catalog-thumbs/citane-amber-cup.jpg" alt="Brewing page preview"></span><span class="meta"><span class="name">Brewing</span><span class="url">training/brewing/</span><span class="use">Public self-study course.</span><a class="open" href="training/brewing/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="training/cupping/"><span class="frame"><img src="assets/catalog-thumbs/coffee-label.jpg" alt="Cupping page preview"></span><span class="meta"><span class="name">Cupping</span><span class="url">training/cupping/</span><span class="use">Public self-study course.</span><a class="open" href="training/cupping/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="buna/"><span class="frame"><img src="assets/catalog-thumbs/buna-landscape.jpg" alt="Buna page preview"></span><span class="meta"><span class="name">Buna</span><span class="url">buna/</span><span class="use">Coffee leaf project.</span><a class="open" href="buna/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="citane/"><span class="frame"><img src="assets/catalog-thumbs/citane-leaf-pack.jpg" alt="Citane page preview"></span><span class="meta"><span class="name">Citane</span><span class="url">citane/</span><span class="use">Coffee leaf beverage page.</span><a class="open" href="citane/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="cold-brew/"><span class="frame"><img src="assets/catalog-thumbs/sample-citane-cup.jpg" alt="Cold brew page preview"></span><span class="meta"><span class="name">Cold Brew</span><span class="url">cold-brew/</span><span class="use">VITO cold brew section.</span><a class="open" href="cold-brew/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="training/lrn/"><span class="frame"><img src="assets/catalog-thumbs/home-living-root.jpg" alt="LRN page preview"></span><span class="meta"><span class="name">LRN</span><span class="url">training/lrn/</span><span class="use">Living Root Network handbook.</span><a class="open" href="training/lrn/" onclick="event.stopPropagation()">open</a></span></button>
-      <button class="card" type="button" data-url="image-catalog.html"><span class="frame"><img src="assets/catalog-thumbs/kk-wordmark.jpg" alt="Image catalog preview"></span><span class="meta"><span class="name">Images</span><span class="url">image-catalog.html</span><span class="use">Photograph selection board.</span><a class="open" href="image-catalog.html" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="index.html"><span class="frame"><iframe src="index.html" title="Home preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Home</span><span class="url">index.html</span><a class="open" href="index.html" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="index-silent-sample.html"><span class="frame"><iframe src="index-silent-sample.html" title="Silent sample preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Silent sample</span><span class="url">index-silent-sample.html</span><a class="open" href="index-silent-sample.html" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="learn/"><span class="frame"><iframe src="learn/" title="Coffee preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Coffee</span><span class="url">learn/</span><a class="open" href="learn/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="training/brewing/"><span class="frame"><iframe src="training/brewing/" title="Brewing preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Brewing</span><span class="url">training/brewing/</span><a class="open" href="training/brewing/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="training/cupping/"><span class="frame"><iframe src="training/cupping/" title="Cupping preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Cupping</span><span class="url">training/cupping/</span><a class="open" href="training/cupping/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="buna/"><span class="frame"><iframe src="buna/" title="Buna preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Buna</span><span class="url">buna/</span><a class="open" href="buna/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="citane/"><span class="frame"><iframe src="citane/" title="Citane preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Citane</span><span class="url">citane/</span><a class="open" href="citane/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="cold-brew/"><span class="frame"><iframe src="cold-brew/" title="Cold Brew preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Cold Brew</span><span class="url">cold-brew/</span><a class="open" href="cold-brew/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="training/lrn/"><span class="frame"><iframe src="training/lrn/" title="LRN preview" loading="lazy"></iframe></span><span class="meta"><span class="name">LRN</span><span class="url">training/lrn/</span><a class="open" href="training/lrn/" onclick="event.stopPropagation()">open</a></span></button>
+      <button class="card" type="button" data-url="image-catalog.html"><span class="frame"><iframe src="image-catalog.html" title="Image catalog preview" loading="lazy"></iframe></span><span class="meta"><span class="name">Images</span><span class="url">image-catalog.html</span><a class="open" href="image-catalog.html" onclick="event.stopPropagation()">open</a></span></button>
     </section>
   </main>
 
