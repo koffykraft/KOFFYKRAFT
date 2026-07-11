@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Brewing mark</title>
+  <desc id="desc">A loose pencil-like line drawing of a handle-less cup beside a small carafe.</desc>
+  <defs>
+    <filter id="soft-pencil" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.88" numOctaves="2" seed="11" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <style>
+      .line {
+        fill: none;
+        stroke: #34302b;
+        stroke-width: 5.1;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#soft-pencil);
+      }
+      .thin {
+        stroke-width: 3;
+        opacity: 0.68;
+      }
+      .ghost {
+        stroke: #9a9287;
+        opacity: 0.34;
+      }
+      .coffee {
+        fill: #4b3428;
+        opacity: 0.88;
+        filter: url(#soft-pencil);
+      }
+    </style>
+  </defs>
+
+  <path class="line" d="M143 181c7 46 23 67 58 70 37 3 63-17 74-68"/>
+  <path class="line" d="M136 180c28-22 105-23 146 2"/>
+  <path class="coffee" d="M164 182c27-11 69-10 91 1 9 5 8 13-2 18-27 11-68 10-91-1-8-4-7-13 2-18z"/>
+
+  <path class="line" d="M414 105c24-9 93-9 119 2"/>
+  <path class="line" d="M422 108c-8 47-30 86-42 130-12 48 22 86 84 89 65 3 115-30 108-83-6-46-35-86-41-136"/>
+  <path class="line" d="M442 108c1-30 13-49 31-60 19 12 31 31 34 61"/>
+  <path class="line" d="M455 51c28-18 67-16 87 7"/>
+  <path class="coffee" d="M402 236c38-19 124-17 159 4 16 10 14 28-4 39-40 24-123 21-158-4-15-11-13-29 3-39z"/>
+</svg>
