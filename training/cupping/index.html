@@ -7,12 +7,12 @@
   <meta name="description" content="KoffyKraft cupping room: a quiet self-study path for tasting coffee.">
   <style>
     :root {
-      --ink: #12110f;
-      --muted: #77736c;
-      --line: #eeeae3;
+      --ink: #171513;
+      --muted: #77726a;
+      --line: #efede8;
       --paper: #fff;
-      --soft: #faf9f6;
-      --gutter: clamp(24px, 7vw, 110px);
+      --soft: #fbfaf7;
+      --gutter: clamp(24px, 6vw, 92px);
     }
 
     * { box-sizing: border-box; }
@@ -23,161 +23,167 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
-      letter-spacing: 0.01em;
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
     }
 
     a { color: inherit; }
 
     .top {
-      min-height: 92px;
+      min-height: 88px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 28px;
-      padding: 28px var(--gutter);
+      padding: 24px var(--gutter);
       border-bottom: 1px solid var(--line);
     }
 
     .brand {
       color: inherit;
-      font-size: clamp(29px, 3vw, 44px);
+      font-size: clamp(28px, 3vw, 42px);
       font-weight: 300;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.04em;
       text-decoration: none;
     }
 
     .top nav {
       display: flex;
-      gap: 24px;
+      gap: 22px;
       flex-wrap: wrap;
       justify-content: flex-end;
+      font-size: 14px;
     }
 
-    .top nav a,
-    .quiet-link,
-    .lesson-list a,
-    .foot a {
-      color: inherit;
-      font-size: 12px;
-      letter-spacing: 0.18em;
+    .top nav a {
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      color: #34312d;
       text-decoration: none;
-      text-transform: uppercase;
     }
 
     .top nav a[aria-current="page"] {
-      border-bottom: 1px solid var(--ink);
+      border-bottom: 1px solid currentColor;
+    }
+
+    main {
+      padding: 0 var(--gutter);
     }
 
     .hero {
-      min-height: calc(100vh - 92px);
+      min-height: calc(100vh - 88px);
       display: grid;
-      grid-template-columns: minmax(0, 0.48fr) minmax(260px, 0.42fr);
-      gap: clamp(54px, 10vw, 160px);
+      grid-template-columns: minmax(0, 0.38fr) minmax(280px, 0.5fr);
+      gap: clamp(44px, 9vw, 140px);
       align-items: center;
-      padding: clamp(70px, 11vw, 150px) var(--gutter);
+      padding: clamp(64px, 11vw, 148px) 0;
+    }
+
+    .title-block {
+      display: grid;
+      gap: 26px;
+      align-content: center;
     }
 
     h1 {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(76px, 13vw, 172px);
+      font-size: clamp(42px, 7vw, 94px);
       font-weight: 400;
-      letter-spacing: -0.05em;
-      line-height: 0.86;
+      letter-spacing: -0.035em;
+      line-height: 1;
     }
 
-    .cup-study {
+    .note {
+      max-width: 25em;
       margin: 0;
-      min-height: 420px;
+      color: var(--muted);
+      font-size: clamp(17px, 1.5vw, 21px);
+      line-height: 1.72;
+    }
+
+    .cup-table {
+      min-height: clamp(360px, 56vh, 640px);
       display: grid;
       place-items: center;
-      background:
-        linear-gradient(var(--line) 1px, transparent 1px),
-        linear-gradient(90deg, var(--line) 1px, transparent 1px);
-      background-size: 72px 72px;
-      background-position: center;
+      background: var(--soft);
+      border: 1px solid var(--line);
     }
 
-    .cup-study svg {
-      width: min(420px, 72vw);
-      height: auto;
-      overflow: visible;
+    .cup {
+      position: relative;
+      width: min(330px, 68vw);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 50% 50%, #4a3328 0 29%, #fff 30% 56%, #e8e3da 57% 58%, #fff 59% 100%);
+      box-shadow: 0 22px 70px rgba(0, 0, 0, 0.08);
+    }
+
+    .cup::before,
+    .cup::after {
+      content: "";
+      position: absolute;
+      top: 47%;
+      width: 52%;
+      height: 3px;
+      background: #c9c4bb;
+      transform-origin: center;
+    }
+
+    .cup::before {
+      left: -42%;
+      transform: rotate(-18deg);
+    }
+
+    .cup::after {
+      right: -42%;
+      transform: rotate(18deg);
     }
 
     .section {
-      padding: clamp(80px, 14vw, 210px) var(--gutter);
+      padding: clamp(72px, 12vw, 160px) 0;
       border-top: 1px solid var(--line);
     }
 
-    .paired {
-      display: grid;
-      grid-template-columns: minmax(0, 0.38fr) minmax(0, 0.52fr);
-      gap: clamp(44px, 8vw, 132px);
-      align-items: start;
-    }
-
-    .small-title {
-      margin: 0;
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
-
-    .quiet-copy {
-      max-width: 560px;
-      margin: 0;
+    .section-title {
+      margin: 0 0 38px;
       color: var(--muted);
-      font-size: clamp(18px, 2vw, 25px);
-      line-height: 1.75;
-    }
-
-    .quiet-tools {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1px;
-      background: var(--line);
-    }
-
-    .tool {
-      min-height: 210px;
-      display: grid;
-      align-content: end;
-      gap: 22px;
-      padding: 26px;
-      background: #fff;
-    }
-
-    .tool svg {
-      width: 78px;
-      height: 78px;
-      color: #24221f;
-    }
-
-    .tool span {
-      font-size: 12px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
     }
 
     .lesson-list {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1px;
-      background: var(--line);
+      max-width: 980px;
+      border-top: 1px solid var(--line);
     }
 
     .lesson-list a {
-      min-height: 104px;
-      display: flex;
-      align-items: end;
-      padding: 22px;
-      background: #fff;
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 24px;
+      align-items: center;
+      min-height: 74px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .lesson-list span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .lesson-list strong {
+      font-size: clamp(18px, 2vw, 24px);
+      font-weight: 400;
+      line-height: 1.25;
     }
 
     .foot {
-      min-height: 120px;
+      min-height: 116px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -185,6 +191,12 @@
       padding: 34px var(--gutter);
       border-top: 1px solid var(--line);
       color: var(--muted);
+      font-size: 14px;
+    }
+
+    .foot a {
+      color: inherit;
+      text-decoration: none;
     }
 
     @media (max-width: 820px) {
@@ -194,19 +206,18 @@
         flex-direction: column;
       }
 
-      .hero,
-      .paired,
-      .quiet-tools,
-      .lesson-list {
+      .hero {
+        min-height: auto;
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        min-height: auto;
+      .cup-table {
+        min-height: 330px;
       }
 
-      .cup-study {
-        min-height: 320px;
+      .lesson-list a {
+        grid-template-columns: 1fr;
+        gap: 6px;
       }
     }
   </style>
@@ -224,68 +235,27 @@
 
   <main>
     <section class="hero" aria-labelledby="cupping-title">
-      <h1 id="cupping-title">Cupping.</h1>
-      <figure class="cup-study" aria-label="White cup on a quiet tasting table">
-        <svg viewBox="0 0 520 420" role="img" aria-labelledby="cup-title">
-          <title id="cup-title">A simple white cupping cup with coffee beans and spoons</title>
-          <defs>
-            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-              <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.08"/>
-            </filter>
-          </defs>
-          <ellipse cx="260" cy="242" rx="150" ry="32" fill="#f4f1ec"/>
-          <path d="M155 140h210l-24 116c-5 24-26 42-51 42h-60c-25 0-46-18-51-42z" fill="#fff" stroke="#d9d5ce" stroke-width="3" filter="url(#shadow)"/>
-          <path d="M363 162c48 0 70 58 28 86-17 11-36 7-51-5" fill="none" stroke="#d9d5ce" stroke-width="16" stroke-linecap="round"/>
-          <ellipse cx="260" cy="140" rx="105" ry="24" fill="#fdfcf9" stroke="#d9d5ce" stroke-width="3"/>
-          <ellipse cx="260" cy="140" rx="76" ry="14" fill="#4a3428" opacity="0.88"/>
-          <path d="M98 334c50-46 116-46 166 0" fill="none" stroke="#c9c3b8" stroke-width="5" stroke-linecap="round"/>
-          <path d="M256 334c50-46 116-46 166 0" fill="none" stroke="#c9c3b8" stroke-width="5" stroke-linecap="round"/>
-          <g fill="#5a3d2d" opacity="0.88">
-            <ellipse cx="125" cy="104" rx="15" ry="22" transform="rotate(-34 125 104)"/>
-            <path d="M119 88c10 12 13 25 8 37" fill="none" stroke="#3c2a20" stroke-width="2"/>
-            <ellipse cx="410" cy="96" rx="14" ry="21" transform="rotate(28 410 96)"/>
-            <path d="M416 80c-10 13-13 25-7 35" fill="none" stroke="#3c2a20" stroke-width="2"/>
-            <ellipse cx="414" cy="304" rx="13" ry="20" transform="rotate(-18 414 304)"/>
-            <path d="M410 288c8 12 10 23 5 34" fill="none" stroke="#3c2a20" stroke-width="2"/>
-          </g>
-        </svg>
+      <div class="title-block">
+        <h1 id="cupping-title">Cupping</h1>
+        <p class="note">Coffee tasted side by side. A slower way to notice aroma, sweetness, acidity, body, and finish.</p>
+      </div>
+      <figure class="cup-table" aria-label="White cupping bowl on a tasting table">
+        <div class="cup" role="img" aria-label="White cup with coffee and two cupping spoons"></div>
       </figure>
     </section>
 
-    <section class="section paired">
-      <h2 class="small-title">Purpose</h2>
-      <p class="quiet-copy">A calm way to compare coffees. Smell. Taste. Notice. Record. Return later with a little more clarity.</p>
-    </section>
-
-    <section class="section">
-      <div class="quiet-tools" aria-label="Cupping table">
-        <div class="tool">
-          <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="32" fill="#fff" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="20" fill="#473124"/></svg>
-          <span>Cups</span>
-        </div>
-        <div class="tool">
-          <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M70 10c14 13 13 35-2 50L35 93 24 82l33-33c15-15 37-16 50-2" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
-          <span>Spoons</span>
-        </div>
-        <div class="tool">
-          <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M18 24h64v52H18z" fill="#fff" stroke="currentColor" stroke-width="3"/><path d="M18 41h64M18 58h64M38 24v52M60 24v52" stroke="currentColor" stroke-width="2"/></svg>
-          <span>Notes</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section paired">
-      <h2 class="small-title">Path</h2>
-      <nav class="lesson-list" aria-label="Cupping lesson index">
-        <a href="guides/before-the-first-cupping.html">Before the first cupping</a>
-        <a href="lessons/lesson-1-1-aroma-mastery.html">Aroma</a>
-        <a href="lessons/lesson-1-2-sweetness-sensitivity.html">Sweetness</a>
-        <a href="lessons/lesson-1-3-acidity-awareness.html">Acidity</a>
-        <a href="lessons/lesson-1-4-body-and-texture.html">Body</a>
-        <a href="lessons/lesson-1-5-aftertaste-and-clean-cup.html">Aftertaste</a>
-        <a href="lessons/lesson-2-4-consistency-and-comparative-cupping.html">Comparison</a>
-        <a href="lessons/lesson-3-3-using-a-cupping-form-effectively.html">Form</a>
-        <a href="lessons/lesson-3-8-exploratory-cupping-and-curiosity-sessions.html">Curiosity</a>
+    <section class="section" aria-labelledby="path-title">
+      <h2 id="path-title" class="section-title">Lessons</h2>
+      <nav class="lesson-list" aria-label="Cupping lessons">
+        <a href="guides/before-the-first-cupping.html"><span>Start</span><strong>Before the first cupping</strong></a>
+        <a href="lessons/lesson-1-1-aroma-mastery.html"><span>01</span><strong>Aroma</strong></a>
+        <a href="lessons/lesson-1-2-sweetness-sensitivity.html"><span>02</span><strong>Sweetness</strong></a>
+        <a href="lessons/lesson-1-3-acidity-awareness.html"><span>03</span><strong>Acidity</strong></a>
+        <a href="lessons/lesson-1-4-body-and-texture.html"><span>04</span><strong>Body and texture</strong></a>
+        <a href="lessons/lesson-1-5-aftertaste-and-clean-cup.html"><span>05</span><strong>Aftertaste and clean cup</strong></a>
+        <a href="lessons/lesson-2-4-consistency-and-comparative-cupping.html"><span>06</span><strong>Comparison</strong></a>
+        <a href="lessons/lesson-3-3-using-a-cupping-form-effectively.html"><span>07</span><strong>Cupping form</strong></a>
+        <a href="lessons/lesson-3-8-exploratory-cupping-and-curiosity-sessions.html"><span>08</span><strong>Curiosity sessions</strong></a>
       </nav>
     </section>
   </main>
