@@ -6,6 +6,7 @@
   <title>KoffyKraft | Specialty Coffee Roastery in Kerala</title>
   <meta name="description" content="KoffyKraft is a small specialty coffee roastery in Karavaloor, Kerala, offering carefully sourced coffees, practical brewing guides, and transparent farm-linked learning.">
   <link rel="stylesheet" href="assets/site/styles.css">
+  <script defer src="assets/site/site.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -32,6 +33,7 @@
           <a class="button outline" href="#process">How we roast</a>
         </div>
       </div>
+      <!-- Component: hero-image uses the shared image-card frame language at larger editorial scale. -->
       <figure class="hero-image">
         <img src="assets/site/roaster-real.jpg" alt="KoffyKraft roasting equipment">
       </figure>
@@ -49,6 +51,7 @@
         <h2>Current coffees should feel clear before they feel fancy.</h2>
         <p>These cards are the structure for the live coffee list: origin, process, roast style, taste direction, and best brew method. When stock changes, this section can be updated without changing the whole site.</p>
       </div>
+      <!-- Component: coffee-card. Required structure: tag, h3 title, taste copy, roast/best-for metadata, tertiary link. -->
       <div class="coffee-grid">
         <article class="coffee-card">
           <span class="tag">India / Producer lot</span>
@@ -80,6 +83,7 @@
         <h2>Roasting is treated as a record, not a performance.</h2>
         <p>Every roast starts with the green coffee and the intended cup. We track the roast, taste the result, brew it realistically, and make the next decision from evidence rather than fashion.</p>
       </div>
+      <!-- Component: process step card. Required structure: number span, h3 title, concise process note. -->
       <div class="process-steps">
         <article><span>01</span><h3>Source</h3><p>Choose coffees with enough traceability, freshness, and cup promise to deserve careful roasting.</p></article>
         <article><span>02</span><h3>Roast</h3><p>Use heat gently and deliberately, preserving sweetness, balance, and the character of the lot.</p></article>
@@ -94,6 +98,7 @@
         <h2>Better coffee starts with small corrections.</h2>
         <p>The guides are practical rather than intimidating. Start with your brewer, your grinder, and your taste. Then adjust one thing at a time.</p>
       </div>
+      <!-- Component: guide-card. Same card frame as coffee-card, used for education destinations. -->
       <div class="guide-layout">
         <a class="guide-card" href="training/brewing/">
           <span>Course</span>

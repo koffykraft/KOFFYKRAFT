@@ -1,0 +1,16 @@
+page,viewport,overflow,scrollWidth,width,activeNav,firstFocusTag,firstFocusOutline,loadMs
+index.html,mobile375,false,375,375,"Coffees","a","2px solid rgb(111, 126, 86)",253
+index.html,tablet768,false,768,768,"Coffees","a","2px solid rgb(111, 126, 86)",224
+index.html,desktop1440,false,1440,1440,"Coffees","a","2px solid rgb(111, 126, 86)",45
+learn/index.html,mobile375,false,375,375,"Learn","a","2px solid rgb(111, 126, 86)",32
+learn/index.html,tablet768,false,768,768,"Learn","a","2px solid rgb(111, 126, 86)",32
+learn/index.html,desktop1440,false,1440,1440,"Learn","a","2px solid rgb(111, 126, 86)",34
+buna/index.html,mobile375,false,375,375,"Buna","a","2px solid rgb(111, 126, 86)",31
+buna/index.html,tablet768,false,768,768,"Buna","a","2px solid rgb(111, 126, 86)",31
+buna/index.html,desktop1440,false,1440,1440,"Buna","a","2px solid rgb(111, 126, 86)",88
+citane/index.html,mobile375,false,375,375,"Citane","a","2px solid rgb(111, 126, 86)",100
+citane/index.html,tablet768,false,768,768,"Citane","a","2px solid rgb(111, 126, 86)",130
+citane/index.html,desktop1440,false,1440,1440,"Citane","a","2px solid rgb(111, 126, 86)",36
+cold-brew/index.html,mobile375,false,375,375,"Cold Brew","a","2px solid rgb(111, 126, 86)",132
+cold-brew/index.html,tablet768,false,768,768,"Cold Brew","a","2px solid rgb(111, 126, 86)",36
+cold-brew/index.html,desktop1440,false,1440,1440,"Cold Brew","a","2px solid rgb(111, 126, 86)",195

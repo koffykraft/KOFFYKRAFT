@@ -1,0 +1,12 @@
+page,element,current value,new value/status,notes
+All public pages,Spacing tokens,Informal repeated pixel values,"Defined CSS tokens: 8/16/24/32/48/64/96",Modified brief scale by adding XS 8px and 3XL 96px for existing editorial rhythm.
+Homepage,Hero vertical spacing,92px top / 64px bottom,Preserved as 3XL top / 2XL bottom,Brief asked to preserve hero breathing room; current hero needed 3XL top after photography enlargement.
+Homepage,Page gutters,clamp-based values,Centralized as --page-gutter,Responsive gutter retained for accessibility and device fit.
+Homepage,Coffee card gap,22px,24px M,Standardized to spacing token.
+Homepage,Process step card gap,22px/2-column grid,24px M,Standardized to spacing token.
+Homepage,Brewing guide card gap,22px,24px M,Standardized to spacing token.
+Homepage,Card internal padding,28px,24px M,Modified from brief's 16px because large editorial cards need more internal breathing room.
+Homepage,Button internal padding,10px 16px,10px 16px S,Preserved and tokenized as S horizontal padding.
+Homepage,Major section padding,96px desktop / 64px mobile,3XL desktop / 2XL mobile,Mobile uses reduced scale for readability.
+Homepage,Section divider rules,Border-only,Subtle 1px divider via shared pseudo-elements,Implemented through shared CSS system.
+Interior pages,Content/page hero spacing,Mixed existing values,Preserved existing layout with shared focus/nav/card system,No IA or layout redesign requested.
