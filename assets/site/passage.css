@@ -165,7 +165,7 @@ img {
 .door-list {
   display: grid;
   gap: 1px;
-  margin-top: 46px;
+  margin-top: 0;
   background: var(--line);
 }
 
