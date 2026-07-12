@@ -37,7 +37,8 @@ a { color: inherit; }
 }
 .top nav a,
 .lessons a,
-.foot a {
+.foot a,
+.inline-link {
   color: inherit;
   font-size: 15px;
   text-decoration: none;
@@ -125,6 +126,30 @@ h1 {
 .block ul {
   margin: 0;
   padding-left: 1.1em;
+}
+.quiet-note {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+}
+.quiet-note summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 13px;
+  list-style: none;
+}
+.quiet-note summary::-webkit-details-marker { display: none; }
+.quiet-note summary::after {
+  content: " +";
+  color: var(--muted);
+}
+.quiet-note[open] summary::after { content: " -"; }
+.quiet-note p {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: var(--ink);
+  font-size: clamp(17px, 1.8vw, 21px);
+  line-height: 1.58;
 }
 .note-table {
   width: 100%;
