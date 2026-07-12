@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cupping | KoffyKraft</title>
-  <meta name="description" content="KoffyKraft cupping course index.">
+  <title>Cupping Reference Notes | KoffyKraft</title>
+  <meta name="description" content="KoffyKraft cupping reference notes index.">
   <style>
     :root {
       --ink: #2b261f;
@@ -87,6 +87,36 @@
       height: auto;
     }
 
+    .reference-mark {
+      align-self: center;
+      justify-self: center;
+      width: min(210px, 42vw);
+      min-height: 250px;
+      margin: 0;
+      border: 1px solid var(--line);
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      padding: 42px 34px;
+    }
+
+    .reference-mark span {
+      display: block;
+      height: 1px;
+      background: var(--muted);
+      opacity: 0.55;
+    }
+
+    .reference-note {
+      justify-self: center;
+      max-width: 520px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
     h1 {
       justify-self: center;
       margin: clamp(22px, 4vw, 44px) 0 0;
@@ -150,20 +180,21 @@
   <header class="top">
     <a class="brand" href="../../">KoffyKraft</a>
     <nav aria-label="Primary">
-      <a href="../../learn/">Learn</a>
-      <a href="../brewing/">Brewing</a>
-      <a href="index.html" aria-current="page">Cupping</a>
+      <a href="../quiet/">Quiet course</a>
+      <a href="../brewing/">Brewing notes</a>
+      <a href="index.html" aria-current="page">Cupping notes</a>
       <a href="references.html">References</a>
     </nav>
   </header>
 
   <main>
     <section class="room" aria-labelledby="cupping-title">
-      <figure class="mark"><img src="../../assets/site/cupping-mark.svg" alt="Cupping"></figure>
-      <h1 id="cupping-title">Cupping</h1>
+      <figure class="reference-mark" aria-hidden="true"><span></span><span></span><span></span></figure>
+      <h1 id="cupping-title">Cupping reference notes</h1>
+      <p class="reference-note">The fuller course: guides, sensory notes, exercises, answer guides, and references.</p>
     </section>
 
-    <nav class="lessons" aria-label="Cupping lessons">
+    <nav class="lessons" aria-label="Cupping reference lessons">
       <a href="guides/before-the-first-cupping.html"><span>Start</span>Before the first cupping</a>
       <a href="lessons/lesson-1-1-aroma-mastery.html"><span>01</span>Aroma</a>
       <a href="lessons/lesson-1-2-sweetness-sensitivity.html"><span>02</span>Sweetness</a>
@@ -186,8 +217,8 @@
   </main>
 
   <footer class="foot">
-    <span>Cupping</span>
-    <a href="../../">Home</a>
+    <span>Cupping reference notes</span>
+    <a href="../../">KoffyKraft</a>
   </footer>
 </body>
 </html>

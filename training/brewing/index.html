@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brewing | KoffyKraft</title>
-  <meta name="description" content="KoffyKraft brewing course index.">
+  <title>Brewing Reference Notes | KoffyKraft</title>
+  <meta name="description" content="KoffyKraft brewing reference notes index.">
   <style>
     :root {
       --ink: #2b261f;
@@ -87,6 +87,36 @@
       height: auto;
     }
 
+    .reference-mark {
+      align-self: center;
+      justify-self: center;
+      width: min(210px, 42vw);
+      min-height: 250px;
+      margin: 0;
+      border: 1px solid var(--line);
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      padding: 42px 34px;
+    }
+
+    .reference-mark span {
+      display: block;
+      height: 1px;
+      background: var(--muted);
+      opacity: 0.55;
+    }
+
+    .reference-note {
+      justify-self: center;
+      max-width: 520px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
     h1 {
       justify-self: center;
       margin: clamp(22px, 4vw, 44px) 0 0;
@@ -150,20 +180,21 @@
   <header class="top">
     <a class="brand" href="../../">KoffyKraft</a>
     <nav aria-label="Primary">
-      <a href="../../learn/">Learn</a>
-      <a href="index.html" aria-current="page">Brewing</a>
-      <a href="../cupping/">Cupping</a>
+      <a href="../quiet/">Quiet course</a>
+      <a href="index.html" aria-current="page">Brewing notes</a>
+      <a href="../cupping/">Cupping notes</a>
       <a href="references.html">References</a>
     </nav>
   </header>
 
   <main>
     <section class="room" aria-labelledby="brewing-title">
-      <figure class="mark"><img src="../../assets/site/brewing-mark.svg" alt="Brewing"></figure>
-      <h1 id="brewing-title">Brewing</h1>
+      <figure class="reference-mark" aria-hidden="true"><span></span><span></span><span></span></figure>
+      <h1 id="brewing-title">Brewing reference notes</h1>
+      <p class="reference-note">The fuller course: explanations, exercises, self-checks, logs, and references.</p>
     </section>
 
-    <nav class="lessons" aria-label="Brewing lessons">
+    <nav class="lessons" aria-label="Brewing reference lessons">
       <a href="lessons/lesson-1-introduction-to-coffee-and-brewing-basics.html"><span>01</span>Introduction</a>
       <a href="lessons/lesson-2-the-essentials-brew-ratio-grind-size-and-water-temperature.html"><span>02</span>Ratio, grind, water</a>
       <a href="lessons/lesson-3-immersion-brewing-french-press-fundamentals.html"><span>03</span>Immersion</a>
@@ -183,8 +214,8 @@
   </main>
 
   <footer class="foot">
-    <span>Brewing</span>
-    <a href="../../">Home</a>
+    <span>Brewing reference notes</span>
+    <a href="../../">KoffyKraft</a>
   </footer>
 </body>
 </html>
