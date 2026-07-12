@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Cormorant+Garamond:wght@300&display=swap");
+
 :root {
-  --ink: #2b261f;
-  --muted: #8a8378;
-  --line: #eeeae2;
+  --ink: #171513;
+  --muted: #77736c;
+  --line: #efefeb;
   --paper: #fff;
-  --gutter: clamp(24px, 6vw, 92px);
+  --gutter: clamp(24px, 7vw, 108px);
 }
 
 * { box-sizing: border-box; }
@@ -12,21 +14,27 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Barlow Condensed", "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
 }
 a { color: inherit; }
 .top {
-  min-height: 90px;
+  min-height: 92px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 28px;
-  padding: 28px var(--gutter);
+  padding: 26px var(--gutter);
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 .brand {
-  font-size: clamp(30px, 3vw, 44px);
+  color: var(--ink);
+  font-size: clamp(30px, 3vw, 46px);
   font-weight: 300;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
+  text-transform: none;
   text-decoration: none;
 }
 .top nav {
@@ -40,8 +48,18 @@ a { color: inherit; }
 .foot a,
 .inline-link {
   color: inherit;
-  font-size: 15px;
   text-decoration: none;
+}
+.top nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+}
+.lessons a,
+.foot a,
+.inline-link {
+  font-size: 15px;
 }
 .top nav a[aria-current="page"] { border-bottom: 1px solid currentColor; }
 main { padding: 0 var(--gutter); }
