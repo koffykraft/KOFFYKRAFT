@@ -105,6 +105,13 @@ img {
 
 .entry img { max-height: 62vh; }
 
+.image-space {
+  width: min(100%, 420px);
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
 .entry-home {
   min-height: calc(100vh - 92px);
   display: grid;
@@ -195,6 +202,47 @@ img {
   color: var(--muted);
   font-size: clamp(20px, 2.2vw, 28px);
   line-height: 1.55;
+}
+
+.stock-list {
+  display: grid;
+  gap: 1px;
+  margin: 42px 0;
+  background: var(--line);
+}
+
+.stock-item {
+  display: grid;
+  gap: 8px;
+  padding: 22px 0;
+  background: var(--paper);
+}
+
+.stock-item span,
+.stock-item a {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.stock-item strong {
+  font-size: clamp(22px, 2.4vw, 34px);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.stock-item a {
+  width: fit-content;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.stock-item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 .label {
