@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Cormorant+Garamond:wght@300&display=swap");
+
+:root {
+  --ink: #171513;
+  --muted: #77736c;
+  --line: #efefeb;
+  --paper: #fff;
+  --gutter: clamp(24px, 7vw, 108px);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Barlow Condensed", "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Arial, sans-serif;
+}
+
+a { color: inherit; }
+
+.top,
+.foot {
+  min-height: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding: 26px var(--gutter);
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.brand {
+  color: var(--ink);
+  font-size: clamp(30px, 3vw, 46px);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.top a:not(.brand),
+.foot a,
+.door {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.top a:not(.brand):hover,
+.foot a:hover,
+.door:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+main { min-height: calc(100vh - 184px); }
+
+.entry {
+  min-height: calc(100vh - 92px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.74fr) minmax(240px, 0.36fr);
+  align-items: center;
+  gap: clamp(56px, 12vw, 180px);
+  padding: clamp(70px, 11vw, 162px) var(--gutter);
+}
+
+.entry h1,
+.room-title h1 {
+  margin: 0;
+  font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  font-size: clamp(78px, 12vw, 172px);
+  font-weight: 300;
+  letter-spacing: -0.055em;
+  line-height: 0.82;
+}
+
+.entry figure,
+.panel figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: saturate(0.66) contrast(0.96) brightness(1.04);
+}
+
+.entry img { max-height: 62vh; }
+
+.doors {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: clamp(86px, 14vw, 210px) var(--gutter);
+  border-top: 1px solid var(--line);
+}
+
+.door-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.door {
+  min-height: 154px;
+  align-items: end;
+  padding: 24px;
+  background: #fff;
+  color: #22201c;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.room-title {
+  min-height: 48vh;
+  display: grid;
+  align-content: center;
+  padding: clamp(70px, 12vw, 160px) var(--gutter);
+}
+
+.passage {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(60px, 9vw, 140px) var(--gutter) clamp(110px, 16vw, 220px);
+  border-top: 1px solid var(--line);
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.35fr) minmax(0, 0.65fr);
+  align-items: center;
+  gap: clamp(42px, 8vw, 120px);
+  margin-bottom: clamp(78px, 12vw, 170px);
+}
+
+.panel:last-child { margin-bottom: 0; }
+
+.panel img { max-height: 66vh; }
+
+.small-note {
+  max-width: 640px;
+  color: var(--muted);
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.55;
+}
+
+.label {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.door-list {
+  display: grid;
+  gap: 1px;
+  margin-top: 46px;
+  background: var(--line);
+}
+
+.door-list .door {
+  min-height: 86px;
+}
+
+.foot {
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .top,
+  .foot {
+    min-height: 86px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .entry,
+  .panel,
+  .door-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry {
+    min-height: auto;
+    padding: 54px 24px 92px;
+  }
+
+  .entry figure {
+    order: -1;
+    width: min(260px, 72vw);
+    justify-self: center;
+  }
+
+  .entry h1,
+  .room-title h1 {
+    font-size: clamp(76px, 22vw, 116px);
+  }
+
+  .room-title,
+  .doors,
+  .passage {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
