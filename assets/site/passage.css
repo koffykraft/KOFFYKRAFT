@@ -35,6 +35,13 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(24px, 4vw, 58px);
+}
+
 .brand {
   color: var(--ink);
   font-size: clamp(30px, 3vw, 46px);
@@ -46,6 +53,7 @@ a { color: inherit; }
 
 .top a:not(.brand),
 .foot a,
+.entry-index,
 .door {
   min-height: 44px;
   display: inline-flex;
@@ -55,6 +63,7 @@ a { color: inherit; }
 
 .top a:not(.brand):hover,
 .foot a:hover,
+.entry-index:hover,
 .door:hover {
   text-decoration: underline;
   text-underline-offset: 8px;
@@ -95,6 +104,40 @@ img {
 }
 
 .entry img { max-height: 62vh; }
+
+.entry-home {
+  min-height: calc(100vh - 92px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  justify-items: center;
+  gap: clamp(42px, 8vw, 108px);
+  padding: clamp(46px, 7vw, 92px) var(--gutter) clamp(42px, 7vw, 96px);
+}
+
+.entry-home .entry-index {
+  justify-self: start;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.entry-home figure {
+  width: min(430px, 62vw);
+}
+
+.entry-home h1 {
+  order: 3;
+  justify-self: stretch;
+  text-align: center;
+  font-size: clamp(74px, 15vw, 230px);
+  line-height: 0.72;
+}
+
+.entry-home img {
+  max-height: 62vh;
+}
 
 .doors {
   max-width: 1160px;
@@ -186,6 +229,11 @@ img {
     padding: 24px;
   }
 
+  .top-nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .entry,
   .panel,
   .door-grid {
@@ -206,6 +254,19 @@ img {
   .entry h1,
   .room-title h1 {
     font-size: clamp(76px, 22vw, 116px);
+  }
+
+  .entry-home {
+    gap: 48px;
+    padding-top: 42px;
+  }
+
+  .entry-home figure {
+    width: min(320px, 76vw);
+  }
+
+  .entry-home h1 {
+    font-size: clamp(74px, 20vw, 130px);
   }
 
   .room-title,
