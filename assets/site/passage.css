@@ -160,6 +160,10 @@ img {
   background: var(--line);
 }
 
+.door-grid.five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .door {
   min-height: 154px;
   align-items: end;
@@ -292,7 +296,8 @@ img {
 
   .entry,
   .panel,
-  .door-grid {
+  .door-grid,
+  .door-grid.five {
     grid-template-columns: 1fr;
   }
 
