@@ -118,3 +118,6 @@ table.map{border-collapse:separate;border-spacing:0;min-width:560px;font-size:13
   .leg{border-left-color:#ddd}
   .ui{border-color:#cfc6b8;background:none}
 }
+
+/* how this manual is made */
+.made{margin-top:40px}.made h3{font-size:17px;margin:18px 0 4px}.made p{max-width:62ch}
